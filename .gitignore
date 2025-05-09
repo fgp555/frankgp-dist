@@ -1,0 +1,13 @@
+.idea/
+.vscode/
+node_modules/
+build/
+tmp/
+temp/
+.env
+/dist
+/_credentials
+package-lock.json
+/backups
+/uploads
+*temp.*
