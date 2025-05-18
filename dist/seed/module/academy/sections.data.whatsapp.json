@@ -1,0 +1,21 @@
+[
+    {
+        "id": 25040100,
+        "courseId": 25040000,
+        "sectionOrder": 3,
+        "slug": "introduccion",
+        "title": "Introduccion",
+        "lessons": [
+            {
+                "id": 25040101,
+                "lessonOrder": 1,
+                "slug": "que-es-la-api-whatsapp",
+                "title": "Que es la Api WhatsApp",
+                "subtitle": "Conociendo la Api de WhatsApp",
+                "content": "En este tutorial aprenderás qué es la API de WhatsApp y cuáles son sus funcionalidades. Aprenderás a crear un bot de WhatsApp y enviar mensajes automáticos a tus clientes.",
+                "tags": ["WhatsApp", "API", "Bot", "Mensajes"],
+                "youtubeUrl": "https://youtu.be/LXX2TqORVic"
+            }
+        ]
+    }
+]

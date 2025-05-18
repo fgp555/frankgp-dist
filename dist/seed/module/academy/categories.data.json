@@ -1,0 +1,20 @@
+[
+    {
+        "slug": "devops",
+        "name": "Devops",
+        "description": "Aprende Devops desde cero con ejemplos prácticos.",
+        "thumbnail": "https://i.postimg.cc/FRnwC2DP/devops.webp"
+    },
+    {
+        "slug": "systems",
+        "name": "Sistemas",
+        "description": "Aprende Sistemas desde cero con ejemplos prácticos.",
+        "thumbnail": "https://i.postimg.cc/PJp9g27d/system.webp"
+    },
+    {
+        "slug": "api",
+        "name": "API",
+        "description": "Aprende API desde cero con ejemplos prácticos.",
+        "thumbnail": "https://i.postimg.cc/d3bpwGMr/api.webp"
+    }
+]

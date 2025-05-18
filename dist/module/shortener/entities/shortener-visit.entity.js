@@ -49,9 +49,9 @@ __decorate([
     __metadata("design:type", Date)
 ], ShortenerVisitEntity.prototype, "visitedAt", void 0);
 __decorate([
-    (0, typeorm_1.ManyToOne)(() => shortener_entity_1.ShortUrlEntity, (shortUrl) => shortUrl.visits, { onDelete: "CASCADE" }),
+    (0, typeorm_1.ManyToOne)(() => shortener_entity_1.ShortenerEntity, (shortUrl) => shortUrl.visits, { onDelete: "CASCADE" }),
     (0, typeorm_1.JoinColumn)({ name: "shortenerId" }),
-    __metadata("design:type", shortener_entity_1.ShortUrlEntity)
+    __metadata("design:type", shortener_entity_1.ShortenerEntity)
 ], ShortenerVisitEntity.prototype, "shortener", void 0);
 __decorate([
     (0, typeorm_1.Column)(),

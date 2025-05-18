@@ -1,0 +1,29 @@
+[
+    {
+        "id": 25030100,
+        "courseId": 25030000,
+        "sectionOrder": 3,
+        "slug": "configuracion",
+        "title": "Configuración de Windows",
+        "lessons": [
+            {
+                "id": 25030001,
+                "lessonOrder": 1,
+                "slug": "instalar-office",
+                "title": "Instalar Office",
+                "subtitle": "Como Instalar Office 2024 (Office Deployment Tool)",
+                "content": "En este video, aprenderás a usar herramientas clave para personalizar y desplegar Office LTSC 2021: Office Deployment Tool y Office Customization Tool. Sigue esta guía paso a paso para descargar y configurar los archivos de instalación de Office de manera eficiente.",
+                "tags": ["Office", "Office 2024", "Office LTSC 2021", "Office Deployment Tool", "Office Customization Tool"],
+                "youtubeUrl": "https://youtu.be/LXX2TqORVic",
+                "vkUrl": "https://vk.com/video606230824_456239030",
+                "markdownUrl": "https://frank-gp.github.io/doc/desktop/office/readme.md",
+                "links": [
+                    {
+                        "name": "Documentación",
+                        "url": "https://github.com/frank-gp/doc/tree/main/desktop/office"
+                    }
+                ]
+            }
+        ]
+    }
+]

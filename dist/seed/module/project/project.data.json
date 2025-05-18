@@ -1,0 +1,509 @@
+[
+    {
+        "id": 250201,
+        "title": "Ticket Management System",
+        "description": "Sistema de tickets para la empresa Transpaservic",
+        "category": "Full Stack",
+        "tags": ["frontend", "figma", "nestjs", "mysql", "reactjs"],
+        "image": "https://i.postimg.cc/qqWL8KSK/transpaservic-web.webp",
+        "images": [
+            {
+                "url": "https://i.postimg.cc/qqWL8KSK/transpaservic-web.webp",
+                "alt": "transpaservic"
+            }
+        ],
+        "dates": {
+            "start": "2025-01-13",
+            "end": "2025-03-30",
+            "duration": "3 meses"
+        },
+        "links": [
+            {
+                "name": "website",
+                "url": "http://transpaservic.com.co"
+            }
+        ],
+        "technologies": [
+            { "name": "Figma", "type": "design", "icon": "fab fa-figma" },
+            { "name": "ReactJS", "type": "frontend", "icon": "fab fa-react" },
+            { "name": "NestJS", "type": "backend", "icon": "fab fa-node-js" },
+            { "name": "CPanel", "type": "devops", "icon": "fas fa-server" },
+            { "name": "MySQL", "type": "database", "icon": "fas fa-database" }
+        ],
+        "collaborators": [
+            {
+                "user": { "id": 20250101 },
+                "roles": ["backend", "mobile", "devops"],
+                "skillsUsed": [
+                    { "name": "ReactJS", "type": "frontend" },
+                    { "name": "NestJS", "type": "backend" },
+                    { "name": "MySQL", "type": "database" },
+                    { "name": "CPanel", "type": "devops" }
+                ]
+            },
+            {
+                "user": { "id": 20250104 },
+                "roles": ["design"],
+                "skillsUsed": [{ "name": "Figma", "type": "design" }]
+            },
+            {
+                "user": { "id": 20250102 },
+                "roles": ["frontend"],
+                "skillsUsed": [{ "name": "ReactJS", "type": "frontend" }]
+            }
+        ]
+    },
+    {
+        "id": 250202,
+        "title": "Ticket Management System",
+        "description": "Sistema de tickets para la empresa Transpaservic",
+        "category": "Mobile",
+        "tags": ["mobile", "play store", "figma", "nestjs", "mysql"],
+        "image": "https://i.postimg.cc/mgMxgxkB/transpaservic-mockup.webp",
+        "images": [
+            {
+                "url": "https://i.postimg.cc/mgMxgxkB/transpaservic-mockup.webp",
+                "alt": "transpaservic"
+            }
+        ],
+        "dates": {
+            "start": "2025-02-02",
+            "end": "2025-03-02",
+            "duration": "1 mes"
+        },
+        "links": [
+            {
+                "name": "Play Store",
+                "url": "https://play.google.com/store/apps/details?id=com.fgp555.transpaservic"
+            }
+        ],
+        "technologies": [
+            { "name": "Figma", "type": "design", "icon": "fab fa-figma" },
+            { "name": "React Native", "type": "mobile", "icon": "fab fa-react" },
+            { "name": "NestJS", "type": "backend", "icon": "fab fa-node-js" },
+            { "name": "Play Store", "type": "devops", "icon": "fab fa-google-play" },
+            { "name": "CPanel", "type": "devops", "icon": "fas fa-server" },
+            { "name": "MySQL", "type": "database", "icon": "fas fa-database" }
+        ],
+        "collaborators": [
+            {
+                "user": { "id": 20250101 },
+                "roles": ["backend", "mobile", "devops"],
+                "skillsUsed": [
+                    { "name": "React Native", "type": "mobile" },
+                    { "name": "NestJS", "type": "backend" },
+                    { "name": "MySQL", "type": "database" },
+                    { "name": "Play Store", "type": "devops" }
+                ]
+            },
+            {
+                "user": { "id": 20250104 },
+                "roles": ["design"],
+                "skillsUsed": [{ "name": "Figma", "type": "design" }]
+            },
+            {
+                "user": { "id": 20250102 },
+                "roles": ["frontend"],
+                "skillsUsed": [{ "name": "ReactJS", "type": "frontend" }]
+            }
+        ]
+    },
+    {
+        "id": 250301,
+        "title": "Transport Website",
+        "description": "Servicio de Trasporte de Carga Pesada",
+        "category": "Full Stack",
+        "tags": ["fullstack", "frontend", "backend", "cpanel", "figma"],
+        "image": "https://i.postimg.cc/TPxkv0w3/mockup-desktop.webp",
+        "images": [
+            {
+                "url": "https://i.postimg.cc/1XBWtQV7/mockup-desktop.webp",
+                "alt": "home page"
+            }
+        ],
+        "dates": {
+            "start": "2025-03-01",
+            "end": "2025-03-30",
+            "duration": "1 mes"
+        },
+        "links": [
+            {
+                "name": "website",
+                "url": "https://e-transportech.org"
+            }
+        ],
+        "technologies": [
+            { "name": "Figma", "type": "design", "icon": "fab fa-figma" },
+            { "name": "Angular", "type": "frontend", "icon": "fab fa-angular" },
+            { "name": "Bootstrap", "type": "frontend", "icon": "fab fa-bootstrap" },
+            { "name": "NodeJS", "type": "backend", "icon": "fab fa-node-js" },
+            { "name": "CPanel", "type": "devops", "icon": "fas fa-server" },
+            { "name": "MySQL", "type": "database", "icon": "fas fa-database" }
+        ],
+        "collaborators": [
+            {
+                "user": { "id": 20250101 },
+                "roles": ["devops", "backend", "frontend"],
+                "skillsUsed": [
+                    { "name": "Angular", "type": "frontend" },
+                    { "name": "NodeJS", "type": "backend" },
+                    { "name": "CPanel", "type": "devops" }
+                ]
+            },
+            {
+                "user": { "id": 20250104 },
+                "roles": ["frontend", "design"],
+                "skillsUsed": [
+                    { "name": "Angular", "type": "frontend" },
+                    { "name": "Figma", "type": "design" }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 241120,
+        "title": "Appointment System",
+        "description": "Sistema de citas para clinicas",
+        "category": "Full Stack",
+        "tags": ["fullstack", "frontend", "backend", "cpanel"],
+        "image": "https://i.postimg.cc/pXH5G93K/crefi.webp",
+        "images": [
+            {
+                "url": "https://i.postimg.cc/pXH5G93K/crefi.webp",
+                "alt": "home page"
+            }
+        ],
+        "dates": {
+            "start": "2024-11-20",
+            "end": "2024-12-20",
+            "duration": "1 mes"
+        },
+        "links": [
+            {
+                "name": "github",
+                "url": "https://github.com/fgp555/gio-m3-appointments"
+            }
+        ],
+        "technologies": [
+            { "name": "ReactJS", "type": "frontend", "icon": "fab fa-react" },
+            { "name": "NestJS", "type": "backend", "icon": "fab fa-node-js" },
+            { "name": "CPanel", "type": "devops", "icon": "fas fa-server" },
+            { "name": "PostgreSQL", "type": "database", "icon": "fas fa-database" }
+        ],
+        "collaborators": [
+            {
+                "user": { "id": 20250101 },
+                "roles": ["devops", "backend"],
+                "skillsUsed": [
+                    { "name": "NestJS", "type": "backend" },
+                    { "name": "CPanel", "type": "devops" }
+                ]
+            },
+            {
+                "user": { "id": 20250108 },
+                "roles": ["frontend"],
+                "skillsUsed": [{ "name": "ReactJS", "type": "frontend" }]
+            }
+        ]
+    },
+    {
+        "id": 241102,
+        "title": "URL Shortener",
+        "description": "Acortador de URL con copias de seguridad y estatisticas",
+        "category": "Full Stack",
+        "tags": ["fullstack", "frontend", "backend", "cpanel"],
+        "image": "https://i.postimg.cc/26Kjp5kd/shortener.webp",
+        "images": [
+            {
+                "url": "https://i.postimg.cc/26Kjp5kd/shortener.webp",
+                "alt": "home page"
+            }
+        ],
+        "dates": {
+            "start": "2024-11-02",
+            "end": "2024-11-10",
+            "duration": "1 semana"
+        },
+        "youtube": "https://youtu.be/_okCMMfx1O4",
+        "technologies": [
+            { "name": "HTML", "type": "frontend", "icon": "fab fa-html5" },
+            { "name": "CSS", "type": "frontend", "icon": "fab fa-css3-alt" },
+            { "name": "JS", "type": "frontend", "icon": "fab fa-js" },
+            { "name": "NodeJS", "type": "backend", "icon": "fab fa-node-js" },
+            { "name": "CPanel", "type": "devops", "icon": "fas fa-server" },
+            { "name": "MongoDB", "type": "database", "icon": "fas fa-database" }
+        ],
+        "collaborators": [
+            {
+                "user": { "id": 20250101 },
+                "roles": ["devops", "backend", "frontend"],
+                "skillsUsed": [
+                    { "name": "HTML, CSS, JS", "type": "frontend" },
+                    { "name": "NestJS", "type": "backend" },
+                    { "name": "CPanel", "type": "devops" }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 241020,
+        "title": "Shipping System",
+        "description": "Sistema de envios y entregas con generacion de reportes en PDF",
+        "category": "Full Stack",
+        "tags": ["fullstack", "frontend", "backend", "cpanel"],
+        "image": "https://i.postimg.cc/pXdQYG7g/shipping.webp",
+        "images": [
+            {
+                "url": "https://i.postimg.cc/pXdQYG7g/shipping.webp",
+                "alt": "home page"
+            }
+        ],
+        "dates": {
+            "start": "2024-10-20",
+            "end": "2024-11-20",
+            "duration": "1 mes"
+        },
+        "youtube": "https://youtu.be/DY9lwTE08aw",
+        "technologies": [
+            { "name": "HTML", "type": "frontend", "icon": "fab fa-html5" },
+            { "name": "CSS", "type": "frontend", "icon": "fab fa-css3-alt" },
+            { "name": "JS", "type": "frontend", "icon": "fab fa-js" },
+            { "name": "NestJS", "type": "backend", "icon": "fab fa-node-js" },
+            { "name": "CPanel", "type": "devops", "icon": "fas fa-server" },
+            { "name": "MySQL", "type": "database", "icon": "fas fa-database" }
+        ],
+        "collaborators": [
+            {
+                "user": { "id": 20250101 },
+                "roles": ["devops", "backend", "frontend"],
+                "skillsUsed": [
+                    { "name": "HTML, CSS, JS", "type": "frontend" },
+                    { "name": "NestJS", "type": "backend" },
+                    { "name": "CPanel", "type": "devops" }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 240902,
+        "title": "BP Ventures",
+        "description": "Sistema de entregables para la empresa BP Ventures",
+        "category": "Full Stack",
+        "tags": ["fullstack", "frontend", "backend", "cpanel"],
+        "image": "https://i.postimg.cc/3JKBdJYC/bpventures.webp",
+        "images": [
+            {
+                "url": "https://i.postimg.cc/3JKBdJYC/bpventures.webp",
+                "alt": "home page"
+            }
+        ],
+        "dates": {
+            "start": "2024-09-02",
+            "end": "2024-10-20",
+            "duration": "1 mes"
+        },
+        "youtube": "https://youtu.be/vSBttwQO62k",
+        "technologies": [
+            { "name": "NextJS", "type": "frontend", "icon": "fab fa-react" },
+            { "name": "NestJS", "type": "backend", "icon": "fab fa-node-js" },
+            { "name": "CPanel", "type": "devops", "icon": "fas fa-server" },
+            { "name": "PostgreSQL", "type": "database", "icon": "fas fa-database" }
+        ],
+        "collaborators": [
+            {
+                "user": { "id": 20250101 },
+                "roles": ["devops", "backend", "frontend"],
+                "skillsUsed": [
+                    { "name": "NextJS", "type": "frontend" },
+                    { "name": "NestJS", "type": "backend" },
+                    { "name": "CPanel", "type": "devops" }
+                ]
+            },
+            {
+                "user": { "id": 20250105 },
+                "roles": ["backend"],
+                "skillsUsed": [{ "name": "NestJS", "type": "backend" }]
+            },
+            {
+                "user": { "id": 20250106 },
+                "roles": ["backend", "frontend"],
+                "skillsUsed": [
+                    { "name": "NestJS", "type": "backend" },
+                    { "name": "NextJS", "type": "frontend" }
+                ]
+            },
+            {
+                "user": { "id": 20250102 },
+                "roles": ["frontend"],
+                "skillsUsed": [{ "name": "NextJS", "type": "frontend" }]
+            },
+            {
+                "user": { "id": 20250107 },
+                "roles": ["frontend"],
+                "skillsUsed": [{ "name": "NextJS", "type": "frontend" }]
+            },
+            {
+                "user": { "id": 20250108 },
+                "roles": ["frontend"],
+                "skillsUsed": [{ "name": "NextJS", "type": "frontend" }]
+            }
+        ]
+    },
+    {
+        "id": 240420,
+        "title": "Mariaknoll Store",
+        "description": "Catalogo full stack para vestido de fiesta",
+        "category": "Full Stack",
+        "tags": ["fullstack", "frontend", "backend", "cpanel"],
+        "image": "https://i.postimg.cc/Nfpkq761/mariaknoll-rest-png.webp",
+        "images": [
+            {
+                "url": "https://i.postimg.cc/Nfpkq761/mariaknoll-rest-png.webp",
+                "alt": "home page"
+            }
+        ],
+        "dates": {
+            "start": "2024-04-20",
+            "end": "2024-05-20",
+            "duration": "1 mes"
+        },
+        "links": [
+            {
+                "name": "github",
+                "url": "https://github.com/buchervanesa/mariaknoll.website"
+            }
+        ],
+        "technologies": [
+            { "name": "HTML", "type": "frontend", "icon": "fab fa-html5" },
+            { "name": "CSS", "type": "frontend", "icon": "fab fa-css3-alt" },
+            { "name": "JS", "type": "frontend", "icon": "fab fa-js" },
+            { "name": "NodeJS", "type": "backend", "icon": "fab fa-node-js" },
+            { "name": "CPanel", "type": "devops", "icon": "fas fa-server" },
+            { "name": "MongoDB", "type": "database", "icon": "fas fa-database" }
+        ],
+        "collaborators": [
+            {
+                "user": { "id": 20250101 },
+                "roles": ["devops", "backend"],
+                "skillsUsed": [
+                    { "name": "NodeJS", "type": "backend" },
+                    { "name": "CPanel", "type": "devops" }
+                ]
+            },
+            {
+                "user": { "id": 20250107 },
+                "roles": ["devops", "backend", "frontend"],
+                "skillsUsed": [
+                    { "name": "HTML, CSS, JS", "type": "frontend" },
+                    { "name": "NodeJS", "type": "backend" },
+                    { "name": "CPanel", "type": "devops" }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 240320,
+        "title": "Mini-Postman App",
+        "description": "App Mini-Postman for Get Post and Put Request",
+        "category": "Tools",
+        "tags": ["frontend", "tools"],
+        "image": "https://i.postimg.cc/mkSNr70W/mini-postman.webp",
+        "images": [
+            {
+                "url": "https://i.postimg.cc/mkSNr70W/mini-postman.webp",
+                "alt": "home page"
+            }
+        ],
+        "dates": {
+            "start": "2024-03-20",
+            "end": "2024-03-25",
+            "duration": "1 semana"
+        },
+        "links": [
+            {
+                "name": "website",
+                "url": "https://frank-gp.github.io/app/mini-postman"
+            }
+        ],
+        "technologies": [
+            { "name": "HTML", "type": "frontend", "icon": "fab fa-html5" },
+            { "name": "CSS", "type": "frontend", "icon": "fab fa-css3-alt" },
+            { "name": "JS", "type": "frontend", "icon": "fab fa-js" }
+        ],
+        "collaborators": [
+            {
+                "user": { "id": 20250101 },
+                "roles": ["frontend"],
+                "skillsUsed": [{ "name": "HTML, CSS, JS", "type": "frontend" }]
+            }
+        ]
+    },
+    {
+        "id": 231220,
+        "title": "Fou De Toi Restaurant",
+        "description": "Restaurante vegetariano",
+        "category": "Frontend",
+        "tags": ["frontend"],
+        "image": "https://i.postimg.cc/vHQtNSVY/foudetoi-rest.webp",
+        "images": [
+            {
+                "url": "https://i.postimg.cc/vHQtNSVY/foudetoi-rest.webp",
+                "alt": "home page"
+            }
+        ],
+        "dates": {
+            "start": "2023-12-20",
+            "end": "2023-12-25",
+            "duration": "1 semana"
+        },
+        "technologies": [
+            { "name": "HTML", "type": "frontend", "icon": "fab fa-html5" },
+            { "name": "CSS", "type": "frontend", "icon": "fab fa-css3-alt" },
+            { "name": "JS", "type": "frontend", "icon": "fab fa-js" }
+        ],
+        "collaborators": [
+            {
+                "user": { "id": 20250101 },
+                "roles": ["frontend"],
+                "skillsUsed": [{ "name": "HTML, CSS, JS", "type": "frontend" }]
+            }
+        ]
+    },
+    {
+        "id": 220620,
+        "title": "Venta de Laptops",
+        "description": "Catalogo para la venta de laptop",
+        "category": "Frontend",
+        "tags": ["frontend"],
+        "image": "https://i.postimg.cc/qBcGQdgD/petulap.webp",
+        "images": [
+            {
+                "url": "https://i.postimg.cc/qBcGQdgD/petulap.webp",
+                "alt": "home page"
+            }
+        ],
+        "dates": {
+            "start": "2022-06-20",
+            "end": "2022-06-25",
+            "duration": "1 semana"
+        },
+        "links": [
+            {
+                "name": "website",
+                "url": "https://catalogo-web.github.io/catalogo-petulap"
+            }
+        ],
+        "technologies": [
+            { "name": "HTML", "type": "frontend", "icon": "fab fa-html5" },
+            { "name": "CSS", "type": "frontend", "icon": "fab fa-css3-alt" },
+            { "name": "JS", "type": "frontend", "icon": "fab fa-js" }
+        ],
+        "collaborators": [
+            {
+                "user": { "id": 20250101 },
+                "roles": ["frontend"],
+                "skillsUsed": [{ "name": "HTML, CSS, JS", "type": "frontend" }]
+            }
+        ]
+    }
+]

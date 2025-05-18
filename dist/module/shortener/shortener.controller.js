@@ -14,6 +14,15 @@ class ShortenerController {
             next(err);
         }
     }
+    async findAllSelect(req, res, next) {
+        try {
+            const urls = await service.findAllSelect();
+            res.json(urls);
+        }
+        catch (err) {
+            next(err);
+        }
+    }
     async findAllFilter(req, res, next) {
         try {
             const { page, limit, search, dateVisitFrom, dateVisitTo, sortVisitCount } = req.query;
@@ -33,8 +42,8 @@ class ShortenerController {
     }
     async create(req, res, next) {
         try {
-            const { originalUrl, customCode } = req.body;
-            const result = await service.create(originalUrl, customCode);
+            const { destination, backHalf } = req.body;
+            const result = await service.create(destination, backHalf);
             res.status(201).json(result);
         }
         catch (err) {
@@ -53,7 +62,7 @@ class ShortenerController {
             const referrer = req.headers["referer"] || "";
             // Registrar la visita
             await service.registerVisit(record.id, { ip, userAgent, referrer });
-            res.redirect(record.originalUrl);
+            res.redirect(record.destination);
         }
         catch (err) {
             next(err);
@@ -86,8 +95,8 @@ class ShortenerController {
     async update(req, res, next) {
         try {
             const id = Number(req.params.id);
-            const { originalUrl, customCode } = req.body;
-            const result = await service.update(id, { originalUrl, customCode });
+            const { destination, backHalf } = req.body;
+            const result = await service.update(id, { destination, backHalf });
             if (!result)
                 throw new error_middleware_1.AppError("Short URL not found", 404);
             res.json(result);

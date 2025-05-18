@@ -7,6 +7,7 @@ const router = (0, express_1.Router)();
 const controller = new shortener_controller_1.ShortenerController();
 router.post("/create", (0, asyncHandler_1.asyncHandler)(controller.create.bind(controller)));
 router.get("/findAll", (0, asyncHandler_1.asyncHandler)(controller.findAll.bind(controller)));
+router.get("/findAllSelect", (0, asyncHandler_1.asyncHandler)(controller.findAllSelect.bind(controller)));
 router.get("/findAllFilter", (0, asyncHandler_1.asyncHandler)(controller.findAllFilter.bind(controller)));
 router.get("/redirect/:code", (0, asyncHandler_1.asyncHandler)(controller.redirect.bind(controller)));
 router.patch("/update/:id", (0, asyncHandler_1.asyncHandler)(controller.update.bind(controller)));

@@ -1,0 +1,24 @@
+name: Deploy Node.js App to EC2
+
+on:
+  # workflow_dispatch: # 👈 Activación manual
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH and deploy app
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd /home/ec2-user/frankgp-dist
+            git pull --rebase
+            npm install
+            pm2 restart myappfgp || pm2 start dist/main.js --name myappfgp
+            pm2 save
+

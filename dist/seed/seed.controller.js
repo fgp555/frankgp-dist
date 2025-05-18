@@ -2,7 +2,7 @@
 // src/module/user/user.seed.controller.ts
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SeedController = void 0;
-const user_seeder_1 = require("./data/user.seeder");
+const user_seeder_1 = require("./module/user/user.seeder");
 class SeedController {
     async seedUser(req, res, next) {
         try {
