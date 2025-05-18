@@ -1,0 +1,232 @@
+[
+    {
+        "sku": "NAVBAR-CSS-001",
+        "name": "Navbar CSS Premium",
+        "slug": "navbar-css-premium",
+        "shortDescription": "Un navbar responsive y moderno en CSS puro",
+        "longDescription": "https://enyeinnovation.github.io/files/navbar.md",
+        "price": 19.99,
+        "isActive": true,
+        "category": "CSS",
+        "tags": ["responsive", "navbar", "premium"],
+        "images": [
+            "https://i.postimg.cc/j2m14qy1/mega-io-ipad-pro-01.webp",
+            "https://i.postimg.cc/x8c7mNNH/mega-io-ipad-pro-02.webp"
+        ],
+        "imagesMobile": [
+            "https://i.postimg.cc/k4jzDvGq/mega-io-iphone-se-1.webp",
+            "https://i.postimg.cc/DZfR2M2x/mega-io-iphone-se-2.webp"
+        ],
+        "videoUrl": "https://youtu.be/k-jwXwpNuXI",
+        "fileUrl": "https://enyeinnovation.github.io/files/navbar-premium.zip",
+        "fileType": "css",
+        "fileSize": 102400
+    },
+    {
+        "sku": "NAVBAR-CSS-002",
+        "name": "Navbar Glassmorphism",
+        "slug": "navbar-glassmorphism",
+        "shortDescription": "Navbar estilo glassmorphism moderno y minimalista",
+        "longDescription": "https://enyeinnovation.github.io/files/navbar.md",
+        "price": 24.99,
+        "isActive": true,
+        "category": "CSS",
+        "tags": ["glass", "navbar", "modern"],
+        "images": [
+            "https://i.postimg.cc/j2m14qy1/mega-io-ipad-pro-01.webp",
+            "https://i.postimg.cc/x8c7mNNH/mega-io-ipad-pro-02.webp"
+        ],
+        "imagesMobile": [
+            "https://i.postimg.cc/k4jzDvGq/mega-io-iphone-se-1.webp",
+            "https://i.postimg.cc/DZfR2M2x/mega-io-iphone-se-2.webp"
+        ],
+        "videoUrl": "https://youtu.be/k-jwXwpNuXI",
+        "fileUrl": "https://enyeinnovation.github.io/files/navbar-premium.zip",
+        "fileType": "css",
+        "fileSize": 102400
+    },
+    {
+        "sku": "NAVBAR-CSS-003",
+        "name": "Navbar con Animaciones",
+        "slug": "navbar-con-animaciones",
+        "shortDescription": "Navbar animado con efectos suaves",
+        "longDescription": "https://enyeinnovation.github.io/files/navbar.md",
+        "price": 22.5,
+        "isActive": true,
+        "category": "CSS",
+        "tags": ["animated", "navbar", "transitions"],
+        "images": [
+            "https://i.postimg.cc/j2m14qy1/mega-io-ipad-pro-01.webp",
+            "https://i.postimg.cc/x8c7mNNH/mega-io-ipad-pro-02.webp"
+        ],
+        "imagesMobile": [
+            "https://i.postimg.cc/k4jzDvGq/mega-io-iphone-se-1.webp",
+            "https://i.postimg.cc/DZfR2M2x/mega-io-iphone-se-2.webp"
+        ],
+        "videoUrl": "https://youtu.be/k-jwXwpNuXI",
+        "fileUrl": "https://enyeinnovation.github.io/files/navbar-premium.zip",
+        "fileType": "css",
+        "fileSize": 102400
+    },
+    {
+        "sku": "NAVBAR-CSS-004",
+        "name": "Navbar con Iconos SVG",
+        "slug": "navbar-con-iconos-svg",
+        "shortDescription": "Navbar con íconos SVG personalizados",
+        "longDescription": "https://enyeinnovation.github.io/files/navbar.md",
+        "price": 17.0,
+        "isActive": true,
+        "category": "CSS",
+        "tags": ["icons", "navbar", "svg"],
+        "images": [
+            "https://i.postimg.cc/j2m14qy1/mega-io-ipad-pro-01.webp",
+            "https://i.postimg.cc/x8c7mNNH/mega-io-ipad-pro-02.webp"
+        ],
+        "imagesMobile": [
+            "https://i.postimg.cc/k4jzDvGq/mega-io-iphone-se-1.webp",
+            "https://i.postimg.cc/DZfR2M2x/mega-io-iphone-se-2.webp"
+        ],
+        "videoUrl": "https://youtu.be/k-jwXwpNuXI",
+        "fileUrl": "https://enyeinnovation.github.io/files/navbar-premium.zip",
+        "fileType": "css",
+        "fileSize": 102400
+    },
+    {
+        "sku": "NAVBAR-CSS-005",
+        "name": "Navbar Oscuro",
+        "slug": "navbar-oscuro",
+        "shortDescription": "Navbar con modo oscuro elegante",
+        "longDescription": "https://enyeinnovation.github.io/files/navbar.md",
+        "price": 20.0,
+        "isActive": true,
+        "category": "CSS",
+        "tags": ["dark", "navbar", "css"],
+        "images": [
+            "https://i.postimg.cc/j2m14qy1/mega-io-ipad-pro-01.webp",
+            "https://i.postimg.cc/x8c7mNNH/mega-io-ipad-pro-02.webp"
+        ],
+        "imagesMobile": [
+            "https://i.postimg.cc/k4jzDvGq/mega-io-iphone-se-1.webp",
+            "https://i.postimg.cc/DZfR2M2x/mega-io-iphone-se-2.webp"
+        ],
+        "videoUrl": "https://youtu.be/k-jwXwpNuXI",
+        "fileUrl": "https://enyeinnovation.github.io/files/navbar-premium.zip",
+        "fileType": "css",
+        "fileSize": 102400
+    },
+    {
+        "sku": "NAVBAR-CSS-006",
+        "name": "Navbar Minimalista",
+        "slug": "navbar-minimalista",
+        "shortDescription": "Diseño minimalista y limpio para navbar",
+        "longDescription": "https://enyeinnovation.github.io/files/navbar.md",
+        "price": 15.0,
+        "isActive": true,
+        "category": "CSS",
+        "tags": ["minimal", "navbar", "light"],
+        "images": [
+            "https://i.postimg.cc/j2m14qy1/mega-io-ipad-pro-01.webp",
+            "https://i.postimg.cc/x8c7mNNH/mega-io-ipad-pro-02.webp"
+        ],
+        "imagesMobile": [
+            "https://i.postimg.cc/k4jzDvGq/mega-io-iphone-se-1.webp",
+            "https://i.postimg.cc/DZfR2M2x/mega-io-iphone-se-2.webp"
+        ],
+        "videoUrl": "https://youtu.be/k-jwXwpNuXI",
+        "fileUrl": "https://enyeinnovation.github.io/files/navbar-premium.zip",
+        "fileType": "css",
+        "fileSize": 102400
+    },
+    {
+        "sku": "NAVBAR-CSS-007",
+        "name": "Navbar con Submenú",
+        "slug": "navbar-con-submenu",
+        "shortDescription": "Incluye submenús desplegables accesibles",
+        "longDescription": "https://enyeinnovation.github.io/files/navbar.md",
+        "price": 23.0,
+        "isActive": true,
+        "category": "CSS",
+        "tags": ["submenu", "navbar", "dropdown"],
+        "images": [
+            "https://i.postimg.cc/j2m14qy1/mega-io-ipad-pro-01.webp",
+            "https://i.postimg.cc/x8c7mNNH/mega-io-ipad-pro-02.webp"
+        ],
+        "imagesMobile": [
+            "https://i.postimg.cc/k4jzDvGq/mega-io-iphone-se-1.webp",
+            "https://i.postimg.cc/DZfR2M2x/mega-io-iphone-se-2.webp"
+        ],
+        "videoUrl": "https://youtu.be/k-jwXwpNuXI",
+        "fileUrl": "https://enyeinnovation.github.io/files/navbar-premium.zip",
+        "fileType": "css",
+        "fileSize": 102400
+    },
+    {
+        "sku": "NAVBAR-CSS-008",
+        "name": "Navbar Sticky",
+        "slug": "navbar-sticky",
+        "shortDescription": "Navbar que permanece fijo al hacer scroll",
+        "longDescription": "https://enyeinnovation.github.io/files/navbar.md",
+        "price": 21.0,
+        "isActive": true,
+        "category": "CSS",
+        "tags": ["sticky", "navbar", "fixed"],
+        "images": [
+            "https://i.postimg.cc/j2m14qy1/mega-io-ipad-pro-01.webp",
+            "https://i.postimg.cc/x8c7mNNH/mega-io-ipad-pro-02.webp"
+        ],
+        "imagesMobile": [
+            "https://i.postimg.cc/k4jzDvGq/mega-io-iphone-se-1.webp",
+            "https://i.postimg.cc/DZfR2M2x/mega-io-iphone-se-2.webp"
+        ],
+        "videoUrl": "https://youtu.be/k-jwXwpNuXI",
+        "fileUrl": "https://enyeinnovation.github.io/files/navbar-premium.zip",
+        "fileType": "css",
+        "fileSize": 102400
+    },
+    {
+        "sku": "NAVBAR-CSS-009",
+        "name": "Navbar MultiIdioma",
+        "slug": "navbar-multiidioma",
+        "shortDescription": "Navbar preparado para soporte multilenguaje",
+        "longDescription": "https://enyeinnovation.github.io/files/navbar.md",
+        "price": 25.0,
+        "isActive": true,
+        "category": "CSS",
+        "tags": ["multilingual", "navbar", "i18n"],
+        "images": [
+            "https://i.postimg.cc/j2m14qy1/mega-io-ipad-pro-01.webp",
+            "https://i.postimg.cc/x8c7mNNH/mega-io-ipad-pro-02.webp"
+        ],
+        "imagesMobile": [
+            "https://i.postimg.cc/k4jzDvGq/mega-io-iphone-se-1.webp",
+            "https://i.postimg.cc/DZfR2M2x/mega-io-iphone-se-2.webp"
+        ],
+        "videoUrl": "https://youtu.be/k-jwXwpNuXI",
+        "fileUrl": "https://enyeinnovation.github.io/files/navbar-premium.zip",
+        "fileType": "css",
+        "fileSize": 102400
+    },
+    {
+        "sku": "NAVBAR-CSS-010",
+        "name": "Navbar Mobile First",
+        "slug": "navbar-mobile-first",
+        "shortDescription": "Diseñado primero para móviles, luego desktop",
+        "longDescription": "https://enyeinnovation.github.io/files/navbar.md",
+        "price": 18.5,
+        "isActive": true,
+        "category": "CSS",
+        "tags": ["mobile-first", "responsive", "navbar"],
+        "images": [
+            "https://i.postimg.cc/j2m14qy1/mega-io-ipad-pro-01.webp",
+            "https://i.postimg.cc/x8c7mNNH/mega-io-ipad-pro-02.webp"
+        ],
+        "imagesMobile": [
+            "https://i.postimg.cc/k4jzDvGq/mega-io-iphone-se-1.webp",
+            "https://i.postimg.cc/DZfR2M2x/mega-io-iphone-se-2.webp"
+        ],
+        "videoUrl": "https://youtu.be/k-jwXwpNuXI",
+        "fileUrl": "https://enyeinnovation.github.io/files/navbar-premium.zip",
+        "fileType": "css",
+        "fileSize": 102400
+    }
+]

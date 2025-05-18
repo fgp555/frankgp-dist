@@ -10,9 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserEntity = exports.UserRole = void 0;
-// import { DeviceEntity } from 'src/module/device/entities/device.entity';
-// import { OperatorEntity } from 'src/module/operator/entities/operator.entity';
-// import { WablaEntity } from 'src/module/wablas/entities/wabla.entity';
 const typeorm_1 = require("typeorm");
 var UserRole;
 (function (UserRole) {
@@ -31,13 +28,21 @@ __decorate([
     __metadata("design:type", String)
 ], UserEntity.prototype, "id", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ length: 100 }),
+    (0, typeorm_1.Column)({ nullable: true }),
     __metadata("design:type", String)
-], UserEntity.prototype, "firstName", void 0);
+], UserEntity.prototype, "googleId", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ nullable: true }),
+    __metadata("design:type", String)
+], UserEntity.prototype, "name", void 0);
 __decorate([
     (0, typeorm_1.Column)({ length: 100, nullable: true }),
     __metadata("design:type", String)
 ], UserEntity.prototype, "lastName", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ length: 100, nullable: true }),
+    __metadata("design:type", String)
+], UserEntity.prototype, "displayName", void 0);
 __decorate([
     (0, typeorm_1.Column)({ nullable: true }),
     __metadata("design:type", String)
@@ -47,13 +52,13 @@ __decorate([
     __metadata("design:type", String)
 ], UserEntity.prototype, "whatsapp", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ select: true }),
+    (0, typeorm_1.Column)({ select: true, nullable: true }),
     __metadata("design:type", String)
 ], UserEntity.prototype, "password", void 0);
 __decorate([
     (0, typeorm_1.Column)({ nullable: true }),
     __metadata("design:type", String)
-], UserEntity.prototype, "image", void 0);
+], UserEntity.prototype, "photo", void 0);
 __decorate([
     (0, typeorm_1.Column)({
         type: "enum",
@@ -67,9 +72,17 @@ __decorate([
     __metadata("design:type", Boolean)
 ], UserEntity.prototype, "isVisible", void 0);
 __decorate([
+    (0, typeorm_1.Column)({ type: "text", nullable: true }),
+    __metadata("design:type", String)
+], UserEntity.prototype, "rawGoogle", void 0);
+__decorate([
     (0, typeorm_1.CreateDateColumn)(),
     __metadata("design:type", Date)
 ], UserEntity.prototype, "createdAt", void 0);
+__decorate([
+    (0, typeorm_1.UpdateDateColumn)(),
+    __metadata("design:type", Date)
+], UserEntity.prototype, "updatedAt", void 0);
 exports.UserEntity = UserEntity = __decorate([
     (0, typeorm_1.Entity)("users")
 ], UserEntity);

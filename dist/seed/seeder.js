@@ -2,7 +2,7 @@
 // src/seeder.ts
 Object.defineProperty(exports, "__esModule", { value: true });
 const data_source_1 = require("../config/data-source");
-const user_seeder_1 = require("./data/user.seeder");
+const user_seeder_1 = require("./module/user/user.seeder");
 data_source_1.AppDataSource.initialize()
     .then(async () => {
     console.log("📦 Database initialized for seeding...");

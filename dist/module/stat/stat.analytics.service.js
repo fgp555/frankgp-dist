@@ -16,10 +16,7 @@ class StatAnalyticsService {
                 createdAt: (0, typeorm_1.MoreThanOrEqual)(new Date(new Date().setHours(0, 0, 0, 0))),
             },
         });
-        const uniqueVisitors = await this.repo
-            .createQueryBuilder("stat")
-            .select("DISTINCT stat.ip")
-            .getCount();
+        const uniqueVisitors = await this.repo.createQueryBuilder("stat").select("DISTINCT stat.ip").getCount();
         const countries = await this.repo
             .createQueryBuilder("stat")
             .select("stat.countryName", "country")
@@ -59,11 +56,23 @@ class StatAnalyticsService {
             .orderBy("visits", "DESC")
             .getRawMany();
     }
-    async getByURL() {
+    async getByURL(params) {
+        let { dateFrom, dateTo } = params || {};
+        if (!dateFrom || !dateTo) {
+            const now = new Date();
+            const yesterday = new Date(now);
+            yesterday.setDate(now.getDate() - 1);
+            dateFrom = yesterday.toISOString();
+            dateTo = now.toISOString();
+        }
         return await this.repo
             .createQueryBuilder("stat")
             .select("stat.currentURL", "url")
             .addSelect("COUNT(*)", "visits")
+            .where("stat.createdAt BETWEEN :from AND :to", {
+            from: new Date(dateFrom),
+            to: new Date(dateTo),
+        })
             .groupBy("stat.currentURL")
             .orderBy("visits", "DESC")
             .getRawMany();

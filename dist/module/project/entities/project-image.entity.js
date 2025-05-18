@@ -9,29 +9,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ProjectImage = void 0;
+exports.ProjectImageEntity = void 0;
 const typeorm_1 = require("typeorm");
 const project_entity_1 = require("./project.entity");
-let ProjectImage = class ProjectImage {
+let ProjectImageEntity = class ProjectImageEntity {
 };
-exports.ProjectImage = ProjectImage;
+exports.ProjectImageEntity = ProjectImageEntity;
 __decorate([
     (0, typeorm_1.PrimaryGeneratedColumn)(),
     __metadata("design:type", Number)
-], ProjectImage.prototype, "id", void 0);
+], ProjectImageEntity.prototype, "id", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], ProjectImage.prototype, "name", void 0);
+], ProjectImageEntity.prototype, "url", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], ProjectImage.prototype, "url", void 0);
+], ProjectImageEntity.prototype, "alt", void 0);
 __decorate([
     (0, typeorm_1.ManyToOne)(() => project_entity_1.ProjectEntity, (project) => project.images),
     __metadata("design:type", project_entity_1.ProjectEntity)
-], ProjectImage.prototype, "project", void 0);
-exports.ProjectImage = ProjectImage = __decorate([
-    (0, typeorm_1.Entity)()
-], ProjectImage);
+], ProjectImageEntity.prototype, "project", void 0);
+exports.ProjectImageEntity = ProjectImageEntity = __decorate([
+    (0, typeorm_1.Entity)('project_image')
+], ProjectImageEntity);
 //# sourceMappingURL=project-image.entity.js.map

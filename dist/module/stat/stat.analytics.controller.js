@@ -36,7 +36,11 @@ class StatAnalyticsController {
     }
     async byURL(req, res, next) {
         try {
-            const result = await service.getByURL();
+            const { dateFrom, dateTo } = req.query;
+            const result = await service.getByURL({
+                dateFrom: dateFrom,
+                dateTo: dateTo,
+            });
             res.json(result);
         }
         catch (err) {

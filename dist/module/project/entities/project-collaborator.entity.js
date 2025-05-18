@@ -9,45 +9,36 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ProjectCollaboratorEntity = void 0;
+exports.CollaboratorEntity = void 0;
 const typeorm_1 = require("typeorm");
-const project_content_entity_1 = require("./project-content.entity");
-let ProjectCollaboratorEntity = class ProjectCollaboratorEntity {
+const project_skill_entity_1 = require("./project-skill.entity");
+const user_entity_1 = require("./user.entity");
+const project_entity_1 = require("./project.entity");
+let CollaboratorEntity = class CollaboratorEntity {
 };
-exports.ProjectCollaboratorEntity = ProjectCollaboratorEntity;
+exports.CollaboratorEntity = CollaboratorEntity;
 __decorate([
     (0, typeorm_1.PrimaryGeneratedColumn)(),
     __metadata("design:type", Number)
-], ProjectCollaboratorEntity.prototype, "id", void 0);
+], CollaboratorEntity.prototype, "id", void 0);
 __decorate([
     (0, typeorm_1.Column)("simple-array"),
     __metadata("design:type", Array)
-], ProjectCollaboratorEntity.prototype, "roles", void 0);
+], CollaboratorEntity.prototype, "roles", void 0);
 __decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], ProjectCollaboratorEntity.prototype, "name", void 0);
+    (0, typeorm_1.ManyToMany)(() => project_skill_entity_1.ProjectSkillEntity, { cascade: true, eager: true }),
+    (0, typeorm_1.JoinTable)(),
+    __metadata("design:type", Array)
+], CollaboratorEntity.prototype, "skillsUsed", void 0);
 __decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], ProjectCollaboratorEntity.prototype, "title", void 0);
+    (0, typeorm_1.ManyToOne)(() => user_entity_1.ProjectUserEntity, { cascade: true, eager: true }),
+    __metadata("design:type", user_entity_1.ProjectUserEntity)
+], CollaboratorEntity.prototype, "user", void 0);
 __decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], ProjectCollaboratorEntity.prototype, "description", void 0);
-__decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], ProjectCollaboratorEntity.prototype, "image", void 0);
-__decorate([
-    (0, typeorm_1.Column)("json"),
-    __metadata("design:type", Object)
-], ProjectCollaboratorEntity.prototype, "links", void 0);
-__decorate([
-    (0, typeorm_1.ManyToOne)(() => project_content_entity_1.ProjectContent, (content) => content.collaborators),
-    __metadata("design:type", project_content_entity_1.ProjectContent)
-], ProjectCollaboratorEntity.prototype, "content", void 0);
-exports.ProjectCollaboratorEntity = ProjectCollaboratorEntity = __decorate([
-    (0, typeorm_1.Entity)()
-], ProjectCollaboratorEntity);
+    (0, typeorm_1.ManyToOne)(() => project_entity_1.ProjectEntity, (project) => project.collaborators),
+    __metadata("design:type", project_entity_1.ProjectEntity)
+], CollaboratorEntity.prototype, "project", void 0);
+exports.CollaboratorEntity = CollaboratorEntity = __decorate([
+    (0, typeorm_1.Entity)("project_collaborator")
+], CollaboratorEntity);
 //# sourceMappingURL=project-collaborator.entity.js.map

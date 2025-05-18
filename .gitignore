@@ -5,7 +5,7 @@ build/
 tmp/
 temp/
 .env
-/dist
+# /dist
 /_credentials
 package-lock.json
 /backups

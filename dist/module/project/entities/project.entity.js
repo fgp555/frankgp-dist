@@ -12,20 +12,25 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProjectEntity = void 0;
 const typeorm_1 = require("typeorm");
 const project_image_entity_1 = require("./project-image.entity");
-const project_button_entity_1 = require("./project-button.entity");
-const language_entity_1 = require("./language.entity");
-const project_content_entity_1 = require("./project-content.entity");
+const project_link_entity_1 = require("./project-link.entity");
+const project_technology_entity_1 = require("./project-technology.entity");
+const project_collaborator_entity_1 = require("./project-collaborator.entity");
+const project_dates_embeddable_1 = require("./project-dates.embeddable");
 let ProjectEntity = class ProjectEntity {
 };
 exports.ProjectEntity = ProjectEntity;
 __decorate([
-    (0, typeorm_1.PrimaryColumn)(),
+    (0, typeorm_1.PrimaryGeneratedColumn)(),
     __metadata("design:type", Number)
 ], ProjectEntity.prototype, "id", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], ProjectEntity.prototype, "category", void 0);
+], ProjectEntity.prototype, "title", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ type: "text" }),
+    __metadata("design:type", String)
+], ProjectEntity.prototype, "description", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
@@ -33,38 +38,49 @@ __decorate([
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], ProjectEntity.prototype, "title", void 0);
+], ProjectEntity.prototype, "category", void 0);
 __decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], ProjectEntity.prototype, "description", void 0);
+    (0, typeorm_1.Column)("simple-array"),
+    __metadata("design:type", Array)
+], ProjectEntity.prototype, "tags", void 0);
 __decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], ProjectEntity.prototype, "github", void 0);
-__decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], ProjectEntity.prototype, "url", void 0);
-__decorate([
-    (0, typeorm_1.OneToMany)(() => project_image_entity_1.ProjectImage, (img) => img.project, { cascade: true }),
+    (0, typeorm_1.OneToMany)(() => project_image_entity_1.ProjectImageEntity, (image) => image.project, {
+        cascade: true,
+        eager: true,
+    }),
     __metadata("design:type", Array)
 ], ProjectEntity.prototype, "images", void 0);
 __decorate([
-    (0, typeorm_1.OneToMany)(() => project_button_entity_1.ProjectButton, (btn) => btn.project, { cascade: true }),
-    __metadata("design:type", Array)
-], ProjectEntity.prototype, "buttons", void 0);
+    (0, typeorm_1.Column)(() => project_dates_embeddable_1.ProjectDates),
+    __metadata("design:type", project_dates_embeddable_1.ProjectDates)
+], ProjectEntity.prototype, "dates", void 0);
 __decorate([
-    (0, typeorm_1.ManyToMany)(() => language_entity_1.Language, { cascade: true }),
+    (0, typeorm_1.OneToMany)(() => project_link_entity_1.ProjectLinkEntity, (link) => link.project, {
+        cascade: true,
+        eager: true,
+    }),
+    __metadata("design:type", Array)
+], ProjectEntity.prototype, "links", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ nullable: true }),
+    __metadata("design:type", String)
+], ProjectEntity.prototype, "youtube", void 0);
+__decorate([
+    (0, typeorm_1.ManyToMany)(() => project_technology_entity_1.TechnologyEntity, {
+        cascade: true,
+        eager: true,
+    }),
     (0, typeorm_1.JoinTable)(),
     __metadata("design:type", Array)
-], ProjectEntity.prototype, "languages", void 0);
+], ProjectEntity.prototype, "technologies", void 0);
 __decorate([
-    (0, typeorm_1.OneToOne)(() => project_content_entity_1.ProjectContent, (content) => content.project, { cascade: true }),
-    (0, typeorm_1.JoinColumn)(),
-    __metadata("design:type", project_content_entity_1.ProjectContent)
-], ProjectEntity.prototype, "content", void 0);
+    (0, typeorm_1.OneToMany)(() => project_collaborator_entity_1.CollaboratorEntity, (collab) => collab.project, {
+        cascade: true,
+        eager: true,
+    }),
+    __metadata("design:type", Array)
+], ProjectEntity.prototype, "collaborators", void 0);
 exports.ProjectEntity = ProjectEntity = __decorate([
-    (0, typeorm_1.Entity)()
+    (0, typeorm_1.Entity)("project")
 ], ProjectEntity);
 //# sourceMappingURL=project.entity.js.map

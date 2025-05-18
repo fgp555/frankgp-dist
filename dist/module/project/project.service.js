@@ -13,14 +13,36 @@ class ProjectService {
         return await this.projectRepo.save(newProject);
     }
     async findAll() {
-        return await this.projectRepo.find({
-            relations: ["images", "buttons", "languages", "content", "content.features", "content.dates", "content.collaborators", "content.technologies"],
+        // return await this.projectRepo.find({
+        //   // relations: ["images", "buttons", "languages", "content", "content.features", "content.dates", "content.collaborators", "content.technologies"],
+        // });
+        // sort desc by id
+        const results = await this.projectRepo.find({
+            order: {
+                id: "DESC",
+            },
         });
+        return {
+            page: 1,
+            totalPages: 1,
+            totalItems: 1,
+            hasMore: false,
+            results,
+        };
     }
     async findOne(id) {
         return await this.projectRepo.findOne({
             where: { id },
-            relations: ["images", "buttons", "languages", "content", "content.features", "content.dates", "content.collaborators", "content.technologies"],
+            // relations: [
+            //   "images",
+            //   "buttons",
+            //   "languages",
+            //   "content",
+            //   "content.features",
+            //   "content.dates",
+            //   "content.collaborators",
+            //   "content.technologies",
+            // ],
         });
     }
     async update(id, data) {

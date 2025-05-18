@@ -8,14 +8,15 @@ class ShortenerVisitService {
     constructor() {
         this.visitRepo = data_source_1.AppDataSource.getRepository(shortener_visit_entity_1.ShortenerVisitEntity);
     }
+    async findAll() {
+        return this.visitRepo.find({
+            order: { visitedAt: "DESC" },
+            relations: ["shortener"],
+        });
+    }
     async findByShortenerId(shortenerId) {
         return this.visitRepo.find({
             where: { shortenerId },
-            order: { visitedAt: "DESC" },
-        });
-    }
-    async findAll() {
-        return this.visitRepo.find({
             order: { visitedAt: "DESC" },
         });
     }

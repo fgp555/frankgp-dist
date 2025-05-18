@@ -16,46 +16,43 @@ class ShortenerService {
     async findAllFilter(params = {}) {
         const { page = 1, limit = 10, search, dateVisitFrom, dateVisitTo, sortVisitCount } = params;
         const skip = (page - 1) * limit;
-        const query = this.repo
-            .createQueryBuilder("shortener")
-            .leftJoinAndSelect("shortener.visits", "visit")
-            .skip(skip)
-            .take(limit)
-            .orderBy("shortener.createdAt", "DESC");
+        const query = this.repo.createQueryBuilder("shortener").leftJoinAndSelect("shortener.visits", "visit");
         if (search) {
             query.andWhere("LOWER(shortener.shortCode) LIKE :search", {
                 search: `%${search.toLowerCase()}%`,
             });
         }
-        const [results, total] = await query.getManyAndCount();
-        // 👇 Filtrar visitas por fecha y contar
-        let filteredResults = results.map((shortener) => {
-            if (dateVisitFrom && dateVisitTo) {
-                const from = new Date(dateVisitFrom);
-                const to = new Date(dateVisitTo);
-                shortener.visits =
-                    shortener.visits?.filter((v) => {
-                        const visitedAt = new Date(v.visitedAt);
-                        return visitedAt >= from && visitedAt <= to;
-                    }) ?? [];
-            }
+        // 👇 Obtener todos los resultados (aún sin aplicar paginación)
+        const [results] = await query.getManyAndCount();
+        // 👇 Usar últimas 24 horas si no se pasó rango
+        const fromDate = dateVisitFrom ? new Date(dateVisitFrom) : new Date(Date.now() - 24 * 60 * 60 * 1000);
+        const toDate = dateVisitTo ? new Date(dateVisitTo) : new Date();
+        const filteredResults = results.map((shortener) => {
+            let filteredVisits = shortener.visits ?? [];
+            filteredVisits = filteredVisits.filter((v) => {
+                const visitedAt = new Date(v.visitedAt);
+                return visitedAt >= fromDate && visitedAt <= toDate;
+            });
             return {
                 ...shortener,
-                visitCount: shortener.visits?.length ?? 0,
+                visits: filteredVisits,
+                visitCount: filteredVisits.length,
             };
         });
-        // 👇 Ordenar por número de visitas si se indica
+        // 👇 Ordenar por cantidad de visitas si se solicitó
         if (sortVisitCount === "ASC") {
             filteredResults.sort((a, b) => a.visitCount - b.visitCount);
         }
         else if (sortVisitCount === "DESC") {
             filteredResults.sort((a, b) => b.visitCount - a.visitCount);
         }
+        // 👇 Aplicar paginación después del ordenamiento
+        const paginatedResults = filteredResults.slice(skip, skip + limit);
         return {
-            total,
+            total: filteredResults.length,
             page,
-            totalPages: Math.ceil(total / limit),
-            results: filteredResults,
+            totalPages: Math.ceil(filteredResults.length / limit),
+            results: paginatedResults,
         };
     }
     async create(originalUrl, customCode) {
