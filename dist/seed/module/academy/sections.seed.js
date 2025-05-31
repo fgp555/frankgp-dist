@@ -11,22 +11,29 @@ const sections_data_aws_json_1 = __importDefault(require("./sections.data.aws.js
 const sections_data_azure_json_1 = __importDefault(require("./sections.data.azure.json"));
 const sections_data_windows_json_1 = __importDefault(require("./sections.data.windows.json"));
 const sections_data_whatsapp_json_1 = __importDefault(require("./sections.data.whatsapp.json"));
+const sections_data_cpanel_json_1 = __importDefault(require("./sections.data.cpanel.json"));
 const seedAcademySection = async () => {
     const sectionRepo = data_source_1.AppDataSource.getRepository(section_entity_1.SectionEntity);
     const courseRepo = data_source_1.AppDataSource.getRepository(course_entity_1.CourseEntity);
     const count = await sectionRepo.count();
     if (count === 0) {
-        const allData = [...sections_data_aws_json_1.default, ...sections_data_azure_json_1.default, ...sections_data_windows_json_1.default, ...sections_data_whatsapp_json_1.default];
+        const allData = [
+            ...sections_data_aws_json_1.default,
+            ...sections_data_azure_json_1.default,
+            ...sections_data_windows_json_1.default,
+            ...sections_data_whatsapp_json_1.default,
+            ...sections_data_cpanel_json_1.default,
+            //
+        ];
         for (const item of allData) {
             const course = await courseRepo.findOneBy({ id: item.courseId });
             if (!course) {
-                console.warn(`⚠️ Course with id ${item.courseId} not found. Skipping section "${item.title}"`);
+                console.warn(`⚠️ Course with id ${item.courseId} not found. Skipping section "${item.titleSection}"`);
                 continue;
             }
             const section = sectionRepo.create({
-                // id: item.id,
                 slug: item.slug,
-                title: item.title,
+                titleSection: item.titleSection,
                 sectionOrder: item.sectionOrder,
                 course,
                 lessons: item.lessons || [],

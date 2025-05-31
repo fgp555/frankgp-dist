@@ -12,8 +12,8 @@ class LessonService {
     async create(data) {
         const section = await this.sectionRepo.findOneByOrFail({ id: data.sectionId });
         const lesson = this.repo.create({
-            title: data.title,
-            content: data.content,
+            labelLesson: data.labelLesson,
+            descriptionLesson: data.descriptionLesson,
             lessonOrder: data.lessonOrder || 1,
             section,
         });

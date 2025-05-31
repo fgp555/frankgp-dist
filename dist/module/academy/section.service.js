@@ -12,7 +12,7 @@ class SectionService {
     async create(data) {
         const course = await this.courseRepo.findOneByOrFail({ id: data.courseId });
         const section = this.repo.create({
-            title: data.title,
+            titleSection: data.titleSection,
             sectionOrder: data.sectionOrder || 1,
             course,
         });

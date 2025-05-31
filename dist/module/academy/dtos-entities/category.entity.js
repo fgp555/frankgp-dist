@@ -36,7 +36,11 @@ __decorate([
     __metadata("design:type", String)
 ], CategoryEntity.prototype, "description", void 0);
 __decorate([
-    (0, typeorm_1.OneToMany)(() => course_entity_1.CourseEntity, (course) => course.category),
+    (0, typeorm_1.OneToMany)(() => course_entity_1.CourseEntity, (course) => course.category, {
+        onDelete: "CASCADE",
+        eager: true,
+        cascade: true
+    }),
     __metadata("design:type", Array)
 ], CategoryEntity.prototype, "courses", void 0);
 __decorate([

@@ -16,10 +16,29 @@ class DBBackupController {
                 next(new error_middleware_1.AppError(`Error al generar el backup: ${error.message}`, 500));
             }
         };
+        this.backupNodeJS = async (req, res, next) => {
+            try {
+                const result = await this.dbBackupService.backupNodeJS();
+                res.json({ message: result });
+            }
+            catch (error) {
+                next(new error_middleware_1.AppError(`Error al generar el backup: ${error.message}`, 500));
+            }
+        };
         this.restore = async (req, res, next) => {
             const { backupfile } = req.params;
             try {
                 const result = await this.dbBackupService.restore(backupfile);
+                res.json({ message: result });
+            }
+            catch (error) {
+                next(new error_middleware_1.AppError(`Error al restaurar la base de datos: ${error.message}`, 500));
+            }
+        };
+        this.restoreNodeJS = async (req, res, next) => {
+            const { backupfile } = req.params;
+            try {
+                const result = await this.dbBackupService.restoreNodeJS(backupfile);
                 res.json({ message: result });
             }
             catch (error) {

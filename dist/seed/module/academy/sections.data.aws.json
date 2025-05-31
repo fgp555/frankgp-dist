@@ -3,14 +3,14 @@
         "sectionOrder": 1,
         "courseId": 25010000,
         "slug": "bases",
-        "title": "Bases",
+        "titleSection": "Bases",
         "lessons": [
             {
                 "lessonOrder": 1,
                 "slug": "lambda-todo-list",
-                "title": "Lambda",
-                "subtitle": "To-Do List con AWS API Gateway y Lambda y Node.js",
-                "content": "En este tutorial aprenderás cómo crear una aplicación To-Do List utilizando AWS API Gateway y AWS Lambda. Ideal para quienes están comenzando con AWS y desean entender cómo integrar funciones serverless con una API básica. 🌐",
+                "labelLesson": "Lambda",
+                "titleLesson": "To-Do List con AWS API Gateway y Lambda y Node.js",
+                "descriptionLesson": "En este tutorial aprenderás cómo crear una aplicación To-Do List utilizando AWS API Gateway y AWS Lambda. Ideal para quienes están comenzando con AWS y desean entender cómo integrar funciones serverless con una API básica. 🌐",
                 "tags": ["AWS", "API Gateway", "Lambda", "Node.js"],
                 "youtubeUrl": "https://youtu.be/d1mPH6faD9g",
                 "markdownUrl": "https://frank-gp.github.io/doc/tools/aws/readme.md",
@@ -25,9 +25,9 @@
             {
                 "lessonOrder": 2,
                 "slug": "desplegar-amplify",
-                "title": "Amplify",
-                "subtitle": "🚀 Subir y Desplegar Proyectos React y Angular con AWS Amplify | CI/CD 🌐",
-                "content": "En este tutorial aprenderás a desplegar tus proyectos React y Angular utilizando AWS Amplify, configurando un flujo de integración y despliegue continuo (CI/CD) para mantener tu aplicación actualizada automáticamente. Ideal para desarrolladores frontend que buscan alojar aplicaciones modernas con facilidad.",
+                "labelLesson": "Amplify",
+                "titleLesson": "🚀 Subir y Desplegar Proyectos React y Angular con AWS Amplify | CI/CD 🌐",
+                "descriptionLesson": "En este tutorial aprenderás a desplegar tus proyectos React y Angular utilizando AWS Amplify, configurando un flujo de integración y despliegue continuo (CI/CD) para mantener tu aplicación actualizada automáticamente. Ideal para desarrolladores frontend que buscan alojar aplicaciones modernas con facilidad.",
                 "tags": ["AWS", "Amplify", "React", "Angular"],
                 "youtubeUrl": "https://youtu.be/xEwuEhpFqmQ",
                 "links": [
@@ -44,14 +44,14 @@
         "sectionOrder": 2,
         "courseId": 25010000,
         "slug": "ec2",
-        "title": "Elastic Compute Cloud",
+        "titleSection": "Elastic Compute Cloud",
         "lessons": [
             {
                 "lessonOrder": 1,
                 "slug": "html",
-                "title": "EC2 HTML",
-                "subtitle": "🚀 Deploy de Página Web HTML en AWS EC2 usando SSH y CLI | Guía Básica 🌐",
-                "content": "En este tutorial aprenderás a desplegar una página web HTML en una instancia de AWS EC2, utilizando SSH y la línea de comandos (CLI). Ideal para quienes están comenzando a trabajar con servidores en la nube y desean entender el flujo básico de despliegue.",
+                "labelLesson": "EC2 HTML",
+                "titleLesson": "🚀 Deploy de Página Web HTML en AWS EC2 usando SSH y CLI | Guía Básica 🌐",
+                "descriptionLesson": "En este tutorial aprenderás a desplegar una página web HTML en una instancia de AWS EC2, utilizando SSH y la línea de comandos (CLI). Ideal para quienes están comenzando a trabajar con servidores en la nube y desean entender el flujo básico de despliegue.",
                 "tags": ["AWS", "EC2", "SSH", "CLI"],
                 "youtubeUrl": "https://youtu.be/4Yk4EKHxcR8",
                 "markdownUrl": "https://frank-gp.github.io/doc/tools/aws/EC2/web-server.md",
@@ -78,9 +78,9 @@
             {
                 "lessonOrder": 2,
                 "slug": "vscode",
-                "title": "EC2 VSCode",
-                "subtitle": "🚀 Conecta AWS EC2 con VS Code usando Remote - SSH | Guía Paso a Paso 🌐",
-                "content": "En este tutorial aprenderás cómo conectar tu instancia de AWS EC2 con Visual Studio Code utilizando la extensión Remote - SSH. Este método te permitirá editar archivos y gestionar tu servidor directamente desde tu editor favorito, de manera eficiente y segura.",
+                "labelLesson": "EC2 VSCode",
+                "titleLesson": "🚀 Conecta AWS EC2 con VS Code usando Remote - SSH | Guía Paso a Paso 🌐",
+                "descriptionLesson": "En este tutorial aprenderás cómo conectar tu instancia de AWS EC2 con Visual Studio Code utilizando la extensión Remote - SSH. Este método te permitirá editar archivos y gestionar tu servidor directamente desde tu editor favorito, de manera eficiente y segura.",
                 "tags": ["AWS", "EC2", "VS Code", "Remote - SSH"],
                 "youtubeUrl": "https://youtu.be/pIctNIQ4mCk",
                 "createdAt": "2025-01-01:00:00.000Z"
@@ -88,9 +88,9 @@
             {
                 "lessonOrder": 3,
                 "slug": "nodejs",
-                "title": "EC2 NodeJS",
-                "subtitle": "🌟 Hello World en Node.js: Deploy en AWS EC2 | Guía Completa 🚀",
-                "content": "En este tutorial, aprenderás cómo crear un sencillo Hello World en Node.js y desplegarlo en un servidor AWS EC2. Una guía práctica para quienes se inician en el desarrollo backend y despliegue en la nube.",
+                "labelLesson": "EC2 NodeJS",
+                "titleLesson": "🌟 Hello World en Node.js: Deploy en AWS EC2 | Guía Completa 🚀",
+                "descriptionLesson": "En este tutorial, aprenderás cómo crear un sencillo Hello World en Node.js y desplegarlo en un servidor AWS EC2. Una guía práctica para quienes se inician en el desarrollo backend y despliegue en la nube.",
                 "tags": ["AWS", "EC2", "Node.js"],
                 "youtubeUrl": "https://youtu.be/G-FDHNfeud8",
                 "markdownUrl": "https://frank-gp.github.io/doc/tools/linux/installs/nodejs.md",
@@ -99,9 +99,9 @@
             {
                 "lessonOrder": 4,
                 "slug": "mern",
-                "title": "EC2 MERN",
-                "subtitle": "🌟 Deploy MERN Stack en AWS EC2 | Guía Paso a Paso 🚀",
-                "content": "Aprende a desplegar una aplicación completa desarrollada con el stack MERN (MongoDB, Express, React y Node.js) en un servidor AWS EC2. Este tutorial te llevará desde la configuración del servidor hasta el despliegue y acceso público a tu aplicación.",
+                "labelLesson": "EC2 MERN",
+                "titleLesson": "🌟 Deploy MERN Stack en AWS EC2 | Guía Paso a Paso 🚀",
+                "descriptionLesson": "Aprende a desplegar una aplicación completa desarrollada con el stack MERN (MongoDB, Express, React y Node.js) en un servidor AWS EC2. Este tutorial te llevará desde la configuración del servidor hasta el despliegue y acceso público a tu aplicación.",
                 "tags": ["AWS", "EC2", "MERN", "MongoDB", "Express", "React", "Node.js"],
                 "youtubeUrl": "https://youtu.be/V7KZ8kt8-PA",
                 "markdownUrl": "https://frank-gp.github.io/doc/tools/linux/installs/nodejs.md",
@@ -128,9 +128,9 @@
             {
                 "lessonOrder": 5,
                 "slug": "ssl",
-                "title": "EC2 SSL",
-                "subtitle": "Cómo instalar un certificado SSL gratuito en tu servidor EC2 con Nginx y Let's Encrypt",
-                "content": "En este tutorial aprenderás a instalar un certificado SSL gratuito usando Let's Encrypt y Certbot en una instancia EC2 de Amazon Web Services (AWS) con Nginx como servidor web.",
+                "labelLesson": "EC2 SSL",
+                "titleLesson": "Cómo instalar un certificado SSL gratuito en tu servidor EC2 con Nginx y Let's Encrypt",
+                "descriptionLesson": "En este tutorial aprenderás a instalar un certificado SSL gratuito usando Let's Encrypt y Certbot en una instancia EC2 de Amazon Web Services (AWS) con Nginx como servidor web.",
                 "tags": ["AWS", "EC2", "Certificado SSL", "Nginx", "Let's Encrypt", "Certbot"],
                 "youtubeUrl": "https://youtu.be/D1eUBNXm-kw",
                 "markdownUrl": "https://frank-gp.github.io/doc/tools/linux/amazon-linux/readme.md",
@@ -143,14 +143,15 @@
                         "name": "Linux Commands",
                         "url": "https://github.com/frank-gp/doc/tree/main/tools/linux"
                     }
-                ]
+                ],
+                "createdAt": "2025-05-28:00:00.000Z"
             },
             {
                 "lessonOrder": 6,
                 "slug": "ci-cd",
-                "title": "EC2 CI/CD",
-                "subtitle": "CI/CD con GitHub Actions en EC2: Despliega tu App Node.js con PM2 y Nginx",
-                "content": "En este tutorial aprenderás a configurar un entorno de producción en AWS EC2 para aplicaciones Node.js, instalar y usar PM2 para mantener tu app corriendo, configurar Nginx como proxy inverso y automatizar despliegues con GitHub Actions. Desde la instalación de Node.js hasta la integración completa de CI/CD, todo paso a paso.",
+                "labelLesson": "EC2 CI/CD",
+                "titleLesson": "CI/CD con GitHub Actions en EC2: Despliega tu App Node.js con PM2 y Nginx",
+                "descriptionLesson": "En este tutorial aprenderás a configurar un entorno de producción en AWS EC2 para aplicaciones Node.js, instalar y usar PM2 para mantener tu app corriendo, configurar Nginx como proxy inverso y automatizar despliegues con GitHub Actions. Desde la instalación de Node.js hasta la integración completa de CI/CD, todo paso a paso.",
                 "tags": ["AWS", "EC2", "CI/CD", "GitHub Actions", "Node.js", "PM2", "Nginx"],
                 "youtubeUrl": "https://youtu.be/JxJLmnE4VB4",
                 "markdownUrl": "https://frank-gp.github.io/doc/tools/linux/amazon-linux/ci-cd.md",
@@ -163,7 +164,18 @@
                         "name": "Linux Commands",
                         "url": "https://github.com/frank-gp/doc/tree/main/tools/linux"
                     }
-                ]
+                ],
+                "createdAt": "2025-05-28:00:00.000Z"
+            },
+            {
+                "lessonOrder": 7,
+                "slug": "elastic-ip",
+                "labelLesson": "EC2 Elastic IP",
+                "titleLesson": "✅ Cómo Asignar una IP Estática en AWS EC2 | Evita que tu IP Pública Cambie",
+                "descriptionLesson": "En este tutorial te muestro paso a paso cómo asignar una Elastic IP (IP estática) a una instancia EC2 de Amazon Web Services (AWS). Así evitarás que tu IP pública cambie cada vez que reinicias la instancia, ideal para servidores web, APIs o cualquier servicio que necesite una IP fija.",
+                "tags": ["AWS", "EC2", "Elastic IP", "IP Estática", "IP Publica", "IP Fija"],
+                "youtubeUrl": "https://youtu.be/x2gNYYHtgos",
+                "createdAt": "2025-05-28:00:00.000Z"
             }
         ]
     },
@@ -171,14 +183,14 @@
         "sectionOrder": 3,
         "courseId": 25010000,
         "slug": "s3",
-        "title": "Simple Storage Service",
+        "titleSection": "Simple Storage Service",
         "lessons": [
             {
                 "lessonOrder": 1,
                 "slug": "s3-spa",
-                "title": "S3 SPA",
-                "subtitle": "🌐 Subir y Desplegar un Proyecto React en S3 usando AWS CLI | Tutorial Básico 🚀",
-                "content": "En este tutorial te muestro cómo subir y desplegar un proyecto de React en Amazon S3 utilizando la AWS CLI. Ideal para desarrolladores que buscan una forma sencilla y eficiente de alojar aplicaciones web estáticas en la nube. ☁️",
+                "labelLesson": "S3 SPA",
+                "titleLesson": "🌐 Subir y Desplegar un Proyecto React en S3 usando AWS CLI | Tutorial Básico 🚀",
+                "descriptionLesson": "En este tutorial te muestro cómo subir y desplegar un proyecto de React en Amazon S3 utilizando la AWS CLI. Ideal para desarrolladores que buscan una forma sencilla y eficiente de alojar aplicaciones web estáticas en la nube. ☁️",
                 "tags": ["AWS", "S3", "React", "AWS CLI"],
                 "youtubeUrl": "https://youtu.be/IRld4o3yqcM",
                 "links": [
@@ -196,9 +208,9 @@
             {
                 "lessonOrder": 2,
                 "slug": "s3-crud",
-                "title": "S3 CRUD",
-                "subtitle": "🌟 AWS S3: Subir, Obtener, Eliminar y Actualizar Archivos con Node.js 🚀",
-                "content": "En este tutorial, aprenderás cómo trabajar con el servicio de almacenamiento AWS S3 utilizando Node.js. Descubre cómo realizar las operaciones básicas de subir, obtener, eliminar y actualizar archivos de manera eficiente y profesional.",
+                "labelLesson": "S3 CRUD",
+                "titleLesson": "🌟 AWS S3: Subir, Obtener, Eliminar y Actualizar Archivos con Node.js 🚀",
+                "descriptionLesson": "En este tutorial, aprenderás cómo trabajar con el servicio de almacenamiento AWS S3 utilizando Node.js. Descubre cómo realizar las operaciones básicas de subir, obtener, eliminar y actualizar archivos de manera eficiente y profesional.",
                 "tags": ["AWS", "S3", "Node.js"],
                 "youtubeUrl": "https://youtu.be/NUr_4Z5IMfo",
                 "createdAt": "2025-01-01:00:00.000Z"
@@ -209,14 +221,14 @@
         "sectionOrder": 4,
         "courseId": 25010000,
         "slug": "databases",
-        "title": "Databases",
+        "titleSection": "Databases",
         "lessons": [
             {
                 "lessonOrder": 5,
                 "slug": "rds",
-                "title": "RDS",
-                "subtitle": "🚀 AWS RDS: Crear y Conectar con CLI | Guía Paso a Paso 🌐",
-                "content": "En este tutorial aprenderás cómo configurar un servicio de base de datos en AWS RDS y conectarte a ella usando la CLI de AWS. Ideal para gestionar bases de datos escalables y seguras en la nube.",
+                "labelLesson": "RDS",
+                "titleLesson": "🚀 AWS RDS: Crear y Conectar con CLI | Guía Paso a Paso 🌐",
+                "descriptionLesson": "En este tutorial aprenderás cómo configurar un servicio de base de datos en AWS RDS y conectarte a ella usando la CLI de AWS. Ideal para gestionar bases de datos escalables y seguras en la nube.",
                 "tags": ["AWS", "RDS", "CLI"],
                 "youtubeUrl": "https://youtu.be/h3DrIqINnvg",
                 "createdAt": "2025-01-01:00:00.000Z"
@@ -227,34 +239,50 @@
         "sectionOrder": 5,
         "courseId": 25010000,
         "slug": "varios",
-        "title": "Varios",
+        "titleSection": "Varios",
         "lessons": [
             {
                 "lessonOrder": 1,
+                "slug": "block-bots",
+                "labelLesson": "Block Bots",
+                "titleLesson": "Cómo bloquear ataques automatizados de WordPress en un servidor Node.js usando Cloudflare (Plan Gratuito).",
+                "descriptionLesson": "¿Tu servidor Node.js está recibiendo solicitudes sospechosas hacia rutas como /wp-admin/ o archivos .php que no existen? Estos son intentos automatizados dirigidos a instalaciones de WordPress que no estás usando.",
+                "tags": ["Cloudflare", "WordPress", "Node.js"],
+                "youtubeUrl": "https://youtu.be/EI9ehUc5ukI",
+                "links": [
+                    {
+                        "name": "Cloudflare",
+                        "url": "https://dash.cloudflare.com"
+                    }
+                ],
+                "createdAt": "2025-05-28:00:00.000Z"
+            },
+            {
+                "lessonOrder": 2,
                 "slug": "phpmyadmin-aws",
-                "title": "phpMyAdmin",
-                "subtitle": "🖥️ Conectar phpMyAdmin con AWS: Guía Completa 🚀",
-                "content": "Aprende a conectar phpMyAdmin con AWS para gestionar bases de datos MySQL alojadas en Amazon RDS o una instancia EC2. Sigue esta guía paso a paso para configurar phpMyAdmin, ajustar los permisos y solucionar posibles errores de conexión.",
+                "labelLesson": "phpMyAdmin",
+                "titleLesson": "🖥️ Conectar phpMyAdmin con AWS: Guía Completa 🚀",
+                "descriptionLesson": "Aprende a conectar phpMyAdmin con AWS para gestionar bases de datos MySQL alojadas en Amazon RDS o una instancia EC2. Sigue esta guía paso a paso para configurar phpMyAdmin, ajustar los permisos y solucionar posibles errores de conexión.",
                 "tags": ["AWS", "RDS", "EC2", "phpMyAdmin", "MySQL"],
                 "youtubeUrl": "https://youtu.be/4ezocO5aDQA",
                 "createdAt": "2025-01-01:00:00.000Z"
             },
             {
-                "lessonOrder": 2,
+                "lessonOrder": 3,
                 "slug": "sam",
-                "title": "SAM",
-                "subtitle": "🌟 AWS SAM: Lambda en Localhost + Deploy con CloudFormation | Guía Completa 🚀",
-                "content": "En este tutorial, aprenderás a usar AWS SAM (Serverless Application Model) para desarrollar y probar funciones Lambda localmente antes de desplegarlas en la nube con CloudFormation. Una guía esencial para manejar arquitecturas serverless de manera eficiente.",
+                "labelLesson": "SAM",
+                "titleLesson": "🌟 AWS SAM: Lambda en Localhost + Deploy con CloudFormation | Guía Completa 🚀",
+                "descriptionLesson": "En este tutorial, aprenderás a usar AWS SAM (Serverless Application Model) para desarrollar y probar funciones Lambda localmente antes de desplegarlas en la nube con CloudFormation. Una guía esencial para manejar arquitecturas serverless de manera eficiente.",
                 "tags": ["AWS", "SAM", "Lambda", "CloudFormation"],
                 "youtubeUrl": "https://youtu.be/kC52n559nPY",
                 "createdAt": "2025-01-01:00:00.000Z"
             },
             {
-                "lessonOrder": 3,
+                "lessonOrder": 4,
                 "slug": "monitorizacion",
-                "title": "Monitorización",
-                "subtitle": "Gestión y monitoreo de servidores Linux",
-                "content": "En este tutorial aprenderás a utilizar WinSCP, htop y glances, tres herramientas fundamentales para la gestión y monitoreo de servidores Linux.",
+                "labelLesson": "Monitorización",
+                "titleLesson": "Gestión y monitoreo de servidores Linux",
+                "descriptionLesson": "En este tutorial aprenderás a utilizar WinSCP, htop y glances, tres herramientas fundamentales para la gestión y monitoreo de servidores Linux.",
                 "tags": ["Linux", "Monitorización", "WinSCP", "htop", "glances"],
                 "youtubeUrl": "https://youtu.be/ionRsMjlT8s",
                 "markdownUrl": "https://frank-gp.github.io/doc/tools/linux/amazon-linux/monitoring.md",

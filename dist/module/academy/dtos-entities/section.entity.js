@@ -27,7 +27,7 @@ __decorate([
 __decorate([
     (0, typeorm_1.Column)({ length: 255 }),
     __metadata("design:type", String)
-], SectionEntity.prototype, "title", void 0);
+], SectionEntity.prototype, "titleSection", void 0);
 __decorate([
     (0, typeorm_1.Column)({ name: "section_order", default: 1 }),
     __metadata("design:type", Number)

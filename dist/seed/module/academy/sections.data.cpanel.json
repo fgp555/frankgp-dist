@@ -1,0 +1,48 @@
+[
+    {
+        "sectionOrder": 2,
+        "courseId": 25030000,
+        "slug": "deploy",
+        "titleSection": "Deploy",
+        "description": "Deploy on Shared Hosting",
+        "lessons": [
+            {
+                "lessonOrder": 1,
+                "slug": "deploy-nodejs",
+                "labelLesson": "Deploy a Node JS",
+                "titleLesson": "Deploy a Node JS App on Shared Hosting via cPanel Tutorial 2024",
+                "descriptionLesson": "Learn how to deploy your Node.js application on shared hosting using cPanel. This step-by-step tutorial covers everything from file upload to setting environment variables and running your app smoothly in a shared hosting environment.",
+                "tags": ["cPanel", "Deploy", "Node.js"],
+                "youtubeUrl": "https://youtu.be/QIChbX4HBME",
+                "links": [
+                    {
+                        "name": "Namecheap Node.js",
+                        "url": "https://www.namecheap.com/support/knowledgebase/article.aspx/10047/2182/how-to-work-with-nodejs-app/"
+                    },
+                    {
+                        "name": "Nest js in CPanel",
+                        "url": "https://youtu.be/DI9268OgpXA"
+                    }
+                ],
+                "createdAt": "2023-10-20:00:00.000Z"
+            },
+            {
+                "lessonOrder": 2,
+                "slug": "deploy-nestjs",
+                "labelLesson": "Deploy a Nest JS",
+                "titleLesson": "Deploy Next js & Nest js in CPanel",
+                "descriptionLesson": "Cómo desplegar aplicaciones Next.js y NestJS en cPanel: Guía paso a paso para configurar y alojar tus aplicaciones full-stack en un entorno de hosting compartido, asegurando una integración eficiente entre frontend y backend, manejo de dependencias, configuración del servidor y optimización del rendimiento en un servidor cPanel.",
+                "tags": ["cPanel", "Deploy", "Nest.js"],
+                "youtubeUrl": "https://youtu.be/DI9268OgpXA",
+                "links": [
+                    {
+                        "name": "Server.js File",
+                        "url": "https://fgp.one/nextjs"
+                    }
+                ],
+                "createdAt": "2024-10-02:00:00.000Z"
+            }
+        ],
+        "createdAt": "2025-06-01:00:00.000Z"
+    }
+]

@@ -32,7 +32,7 @@ const product_routes_1 = __importDefault(require("./module/store/product/product
 const academy_index_routes_1 = __importDefault(require("./module/academy/academy.index.routes"));
 const setupFrontendFallback_1 = require("./utils/setupFrontendFallback");
 const app = (0, express_1.default)();
-app.use((0, morgan_1.default)("dev"));
+app.use((0, morgan_1.default)("common"));
 app.use((0, cors_1.default)());
 // ⚠️ Agrega este middleware personalizado antes de express.json()
 // Esto es solo para la ruta del webhook

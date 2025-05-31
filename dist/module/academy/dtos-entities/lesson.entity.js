@@ -27,15 +27,15 @@ __decorate([
 __decorate([
     (0, typeorm_1.Column)({ length: 255, charset: 'utf8mb4', collation: 'utf8mb4_unicode_ci' }),
     __metadata("design:type", String)
-], LessonEntity.prototype, "title", void 0);
+], LessonEntity.prototype, "labelLesson", void 0);
 __decorate([
     (0, typeorm_1.Column)({ length: 255, nullable: true, charset: 'utf8mb4', collation: 'utf8mb4_unicode_ci' }),
     __metadata("design:type", String)
-], LessonEntity.prototype, "subtitle", void 0);
+], LessonEntity.prototype, "titleLesson", void 0);
 __decorate([
     (0, typeorm_1.Column)({ type: "text", nullable: true, charset: 'utf8mb4', collation: 'utf8mb4_unicode_ci' }),
     __metadata("design:type", String)
-], LessonEntity.prototype, "content", void 0);
+], LessonEntity.prototype, "descriptionLesson", void 0);
 __decorate([
     (0, typeorm_1.Column)("simple-array", { nullable: true }),
     __metadata("design:type", Array)

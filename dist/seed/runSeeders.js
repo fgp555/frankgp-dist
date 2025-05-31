@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.runSeeders = void 0;
 const data_source_1 = require("../config/data-source");
 const categories_seed_1 = require("./module/academy/categories.seed");
-const courses_seed_1 = require("./module/academy/courses.seed");
 const sections_seed_1 = require("./module/academy/sections.seed");
 const options_seeder_1 = require("./module/options/options.seeder");
 const product_seed_1 = require("./module/product/product.seed");
@@ -24,9 +23,7 @@ const runSeeders = async () => {
     await (0, project_seed_1.seedProject)();
     await (0, product_seed_1.seedProduct)();
     await (0, categories_seed_1.seedAcademyCategory)();
-    await (0, courses_seed_1.seedAcademyCourse)();
     await (0, sections_seed_1.seedAcademySection)();
-    // await ShortenerSeedSQL();
     return { message: "Seeders executed successfully" };
 };
 exports.runSeeders = runSeeders;

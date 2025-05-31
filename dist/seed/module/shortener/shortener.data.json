@@ -12,6 +12,7 @@
     { "backHalf": "color", "destination": "https://frank-gp.github.io/app/color/" },
     { "backHalf": "compose", "destination": "https://github.com/frank-gp/doc/tree/main/mobile/compose" },
     { "backHalf": "contact", "destination": "https://frank-gp.github.io/contact/" },
+    { "backHalf": "cpanel", "destination": "https://fgp.one/academy/devops/cpanel" },
     { "backHalf": "css", "destination": "https://github.com/frank-gp/doc/tree/main/frontend/css" },
     { "backHalf": "cv", "destination": "https://frank-gp.github.io/cv/" },
     { "backHalf": "designer", "destination": "https://frank-gp.github.io/designer" },
