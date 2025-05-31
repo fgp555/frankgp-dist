@@ -164,6 +164,15 @@
                         "url": "https://github.com/frank-gp/doc/tree/main/tools/linux"
                     }
                 ]
+            },
+            {
+                "lessonOrder": 7,
+                "slug": "elastic-ip",
+                "title": "EC2 Elastic IP",
+                "subtitle": "✅ Cómo Asignar una IP Estática en AWS EC2 | Evita que tu IP Pública Cambie",
+                "content": "En este tutorial te muestro paso a paso cómo asignar una Elastic IP (IP estática) a una instancia EC2 de Amazon Web Services (AWS). Así evitarás que tu IP pública cambie cada vez que reinicias la instancia, ideal para servidores web, APIs o cualquier servicio que necesite una IP fija.",
+                "tags": ["AWS", "EC2", "Elastic IP", "IP Estática", "IP Publica", "IP Fija"],
+                "youtubeUrl": "https://youtu.be/x2gNYYHtgos"
             }
         ]
     },
@@ -231,6 +240,21 @@
         "lessons": [
             {
                 "lessonOrder": 1,
+                "slug": "block-bots",
+                "title": "Block Bots",
+                "subtitle": "Cómo bloquear ataques automatizados de WordPress en un servidor Node.js usando Cloudflare (Plan Gratuito).",
+                "content": "¿Tu servidor Node.js está recibiendo solicitudes sospechosas hacia rutas como /wp-admin/ o archivos .php que no existen? Estos son intentos automatizados dirigidos a instalaciones de WordPress que no estás usando.",
+                "tags": ["Cloudflare", "WordPress", "Node.js"],
+                "youtubeUrl": "https://youtu.be/EI9ehUc5ukI",
+                "links": [
+                    {
+                        "name": "Cloudflare",
+                        "url": "https://dash.cloudflare.com"
+                    }
+                ]
+            },
+            {
+                "lessonOrder": 2,
                 "slug": "phpmyadmin-aws",
                 "title": "phpMyAdmin",
                 "subtitle": "🖥️ Conectar phpMyAdmin con AWS: Guía Completa 🚀",
@@ -240,7 +264,7 @@
                 "createdAt": "2025-01-01:00:00.000Z"
             },
             {
-                "lessonOrder": 2,
+                "lessonOrder": 3,
                 "slug": "sam",
                 "title": "SAM",
                 "subtitle": "🌟 AWS SAM: Lambda en Localhost + Deploy con CloudFormation | Guía Completa 🚀",
@@ -250,7 +274,7 @@
                 "createdAt": "2025-01-01:00:00.000Z"
             },
             {
-                "lessonOrder": 3,
+                "lessonOrder": 4,
                 "slug": "monitorizacion",
                 "title": "Monitorización",
                 "subtitle": "Gestión y monitoreo de servidores Linux",

@@ -8,6 +8,8 @@ exports.DBBackupService = void 0;
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
 const child_process_1 = require("child_process");
+const mysqldump_1 = __importDefault(require("mysqldump"));
+const promise_1 = __importDefault(require("mysql2/promise"));
 class DBBackupService {
     constructor() {
         this.backupsDir = path_1.default.resolve(__dirname, "../../../backups/db");
@@ -37,6 +39,25 @@ class DBBackupService {
             });
         });
     }
+    async backupNodeJS() {
+        const backupFile = path_1.default.join(this.backupsDir, `mysql-${new Date().toISOString().replace(/[:.Z]/g, "").replace("T", "-").slice(0, -3)}.sql`);
+        try {
+            await (0, mysqldump_1.default)({
+                connection: {
+                    host: process.env.DB_HOST || "localhost",
+                    user: process.env.DB_USERNAME || "root",
+                    password: process.env.DB_PASSWORD || "",
+                    database: process.env.DB_DATABASE || "test",
+                },
+                dumpToFile: backupFile,
+            });
+            this.cleanupOldBackups();
+            return backupFile;
+        }
+        catch (error) {
+            throw new Error(`Error al generar el backup: ${error}`);
+        }
+    }
     async restore(backupFile) {
         const filePath = path_1.default.join(this.backupsDir, backupFile);
         if (!fs_1.default.existsSync(filePath)) {
@@ -58,6 +79,34 @@ class DBBackupService {
                     resolve("Database restored successfully");
             });
         });
+    }
+    async restoreNodeJS(backupFile) {
+        const filePath = path_1.default.join(this.backupsDir, backupFile);
+        if (!fs_1.default.existsSync(filePath)) {
+            throw new Error("Backup file does not exist");
+        }
+        const sql = fs_1.default.readFileSync(filePath, "utf8");
+        const dbName = process.env.DB_DATABASE || "test";
+        const connection = await promise_1.default.createConnection({
+            host: process.env.DB_HOST || "localhost",
+            user: process.env.DB_USERNAME || "root",
+            password: process.env.DB_PASSWORD || "",
+            multipleStatements: true, // 👈 ¡clave!
+        });
+        try {
+            const dropAndCreate = `
+        DROP DATABASE IF EXISTS \`${dbName}\`;
+        CREATE DATABASE \`${dbName}\`;
+        USE \`${dbName}\`;
+      `;
+            await connection.query(dropAndCreate + sql);
+            await connection.end();
+            return "Database restored successfully";
+        }
+        catch (error) {
+            await connection.end();
+            throw new Error(`Error during restore: ${error}`);
+        }
     }
     list() {
         return fs_1.default
