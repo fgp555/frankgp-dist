@@ -7,8 +7,8 @@ exports.EmailService = void 0;
 const nodemailer_1 = __importDefault(require("nodemailer"));
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
-const { MAIL_HOST, MAIL_PORT, MAIL_USER_FROM, MAIL_PASS, MAIL_USER_TO_CC } = process.env;
-// console.log({ MAIL_HOST, MAIL_PORT, MAIL_USER_FROM, MAIL_PASS, MAIL_USER_TO_CC });
+const { MAIL_HOST, MAIL_PORT, MAIL_USER_FROM, MAIL_PASS_FROM, MAIL_USER_TO_CC } = process.env;
+// console.log({ MAIL_HOST, MAIL_PORT, MAIL_USER_FROM, MAIL_PASS_FROM, MAIL_USER_TO_CC });
 class EmailService {
     constructor() {
         this.transporter = nodemailer_1.default.createTransport({
@@ -17,7 +17,7 @@ class EmailService {
             secure: true,
             auth: {
                 user: MAIL_USER_FROM,
-                pass: MAIL_PASS,
+                pass: MAIL_PASS_FROM,
             },
             // tls: {
             //   rejectUnauthorized: false, // ⚠️ Solo usar temporalmente si tienes error de certificado

@@ -19,6 +19,14 @@ class DBConfigController {
         const result = await this.service.dropAndSeed();
         res.json(result);
     }
+    async runSQLQuery(req, res) {
+        const { query } = req.body;
+        if (!query || typeof query !== "string") {
+            return res.status(400).json({ error: "Query must be a valid string." });
+        }
+        const result = await this.service.runSQLQuery(query);
+        res.json(result);
+    }
 }
 exports.DBConfigController = DBConfigController;
 //# sourceMappingURL=db-config.controller.js.map

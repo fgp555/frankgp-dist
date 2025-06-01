@@ -19,6 +19,19 @@ class DBConfigService {
         await this.dropAndSync();
         await (0, runSeeders_1.runSeeders)();
     }
+    async runSQLQuery(query) {
+        const connection = data_source_1.AppDataSource;
+        if (!connection.isInitialized) {
+            await connection.initialize();
+        }
+        try {
+            const result = await connection.query(query);
+            return { success: true, result };
+        }
+        catch (error) {
+            return { success: false, error: error.message };
+        }
+    }
 }
 exports.DBConfigService = DBConfigService;
 //# sourceMappingURL=db-config.service.js.map

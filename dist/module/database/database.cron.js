@@ -1,5 +1,5 @@
 "use strict";
-// database.cron.ts
+// src/module/database/database.cron.ts
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -7,16 +7,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const node_cron_1 = __importDefault(require("node-cron"));
 const db_backup_service_1 = require("./db-backup.service");
 const dbBackupService = new db_backup_service_1.DBBackupService();
-// Ejecutar todos los días al mediodía (12:00 PM)
-node_cron_1.default.schedule("0 12 * * *", async () => {
-    console.log("⏰ Ejecutando backup programado a las 12:00 PM...");
+// Ejecutar todos los días a medianoche (12:00 AM)
+node_cron_1.default.schedule("0 0 * * *", async () => {
+    console.log("⏰ Ejecutando backup programado a las 12:00 AM hora Perú...");
     try {
-        const result = await dbBackupService.backup();
+        const result = await dbBackupService.backupNodeJS();
         console.log("✅ Backup realizado:", result);
     }
     catch (err) {
         console.error("❌ Error en el backup programado:", err);
     }
+}, {
+    timezone: "America/Lima",
 });
 // // Ejecutar cada minuto (para pruebas)
 // cron.schedule("* * * * *", async () => {
