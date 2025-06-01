@@ -25,5 +25,6 @@ router.post("/upload", upload.single("file"), (0, asyncHandler_1.asyncHandler)(c
 router.post("/config/dropAndSync", (0, asyncHandler_1.asyncHandler)(controllerConfig.dropAndSync.bind(controllerConfig)));
 router.post("/config/runSeeders", (0, asyncHandler_1.asyncHandler)(controllerConfig.runSeeders.bind(controllerConfig)));
 router.post("/config/dropAndSeed", (0, asyncHandler_1.asyncHandler)(controllerConfig.dropAndSeed.bind(controllerConfig)));
+router.post("/config/runSQLQuery", (0, asyncHandler_1.asyncHandler)(controllerConfig.runSQLQuery.bind(controllerConfig)));
 exports.default = router;
 //# sourceMappingURL=database.routes.js.map

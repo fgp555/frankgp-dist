@@ -2,11 +2,11 @@
     {
         "sectionOrder": 1,
         "courseId": 25700000,
-        "slug": "configuracion",
-        "titleSection": "Configuración de Windows",
+        "slug": "config",
+        "titleSection": "Configuración",
         "lessons": [
             {
-                "id": 25700001,
+                "lessonOrder": 1,
                 "slug": "instalar-office",
                 "labelLesson": "Instalar Office",
                 "titleLesson": "Como Instalar Office 2024 (Office Deployment Tool)",
@@ -22,6 +22,27 @@
                     }
                 ],
                 "createdAt": "2025-01-01:00:00.000Z"
+            },
+            {
+                "lessonOrder": 2,
+                "slug": "postgres-pass",
+                "labelLesson": "PostgreSQL Password",
+                "titleLesson": "🔒 Cambiar Contraseña en PostgreSQL Fácil y Rápido 🚀 | Guía Paso a Paso",
+                "descriptionLesson": "¿Necesitas cambiar la contraseña de tu usuario en PostgreSQL? 🐘✨ En este video te muestro cómo hacerlo en pocos minutos. 👨‍💻💡",
+                "tags": ["PostgreSQL", "Password PostgreSQL"],
+                "youtubeUrl": "https://youtu.be/W034pKhzmoE",
+                "markdownUrl": "https://frank-gp.github.io/doc/backend/postgres/change-password.md",
+                "links": [
+                    {
+                        "name": "PostgreSQL Downloads",
+                        "url": "https://www.postgresql.org/download"
+                    },
+                    {
+                        "name": "Doc",
+                        "url": "https://github.com/frank-gp/doc/tree/main/backend/postgres"
+                    }
+                ],
+                "createdAt": "2025-01-04:00:00.000Z"
             }
         ]
     }

@@ -7,7 +7,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const body_parser_1 = __importDefault(require("body-parser")); // 👈 Asegúrate de importar esto
 const cors_1 = __importDefault(require("cors"));
 const express_1 = __importDefault(require("express"));
-const morgan_1 = __importDefault(require("morgan"));
 const passport_1 = __importDefault(require("passport"));
 const path_1 = __importDefault(require("path"));
 const express_session_1 = __importDefault(require("express-session"));
@@ -31,8 +30,9 @@ const index_routes_4 = __importDefault(require("./module/auth/index.routes"));
 const product_routes_1 = __importDefault(require("./module/store/product/product.routes"));
 const academy_index_routes_1 = __importDefault(require("./module/academy/academy.index.routes"));
 const setupFrontendFallback_1 = require("./utils/setupFrontendFallback");
+const morganLogger_1 = require("./utils/morganLogger");
 const app = (0, express_1.default)();
-app.use((0, morgan_1.default)("common"));
+app.use(morganLogger_1.morganLogger);
 app.use((0, cors_1.default)());
 // ⚠️ Agrega este middleware personalizado antes de express.json()
 // Esto es solo para la ruta del webhook
@@ -52,8 +52,6 @@ app.use(visit_middleware_1.countVisitMiddleware);
 app.use("/uploads", express_1.default.static(path_1.default.join(__dirname, "../uploads")));
 app.use(passport_1.default.initialize());
 app.use(passport_1.default.session());
-// app.use("/api/oauth-users", oauthRoutes);
-// app.use("/api/auth", googleRoutes);
 app.use("/api/auth", index_routes_4.default);
 app.use("/api/db", database_routes_1.default);
 app.use("/api/email", email_routes_1.default);

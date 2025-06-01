@@ -41,6 +41,22 @@
                     }
                 ],
                 "createdAt": "2024-10-02:00:00.000Z"
+            },
+            {
+                "lessonOrder": 3,
+                "slug": "repo-private-ssh",
+                "labelLesson": "Repo Private SSH",
+                "titleLesson": "Cómo Clonar un Repositorio Privado Usando SSH en cPanel",
+                "descriptionLesson": "En este tutorial, te enseño paso a paso cómo clonar un repositorio privado de Git utilizando SSH en cPanel. 🛠️ Si estás gestionando tu proyecto desde cPanel y necesitas acceder a un repositorio privado de GitHub o GitLab, esta guía es para ti.",
+                "tags": ["cPanel", "Deploy", "SSH"],
+                "youtubeUrl": "https://youtu.be/X43DKkeZpKc",
+                "links": [
+                    {
+                        "name": "SSH Doc",
+                        "url": "https://fgp.one/ssh"
+                    }
+                ],
+                "createdAt": "2024-10-18:00:00.000Z"
             }
         ],
         "createdAt": "2025-06-01:00:00.000Z"
