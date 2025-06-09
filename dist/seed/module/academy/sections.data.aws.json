@@ -13,11 +13,11 @@
                 "descriptionLesson": "En este tutorial aprenderás cómo crear una aplicación To-Do List utilizando AWS API Gateway y AWS Lambda. Ideal para quienes están comenzando con AWS y desean entender cómo integrar funciones serverless con una API básica. 🌐",
                 "tags": ["AWS", "API Gateway", "Lambda", "Node.js"],
                 "youtubeUrl": "https://youtu.be/d1mPH6faD9g",
-                "markdownUrl": "https://frank-gp.github.io/doc/tools/aws/readme.md",
+                "markdownUrl": "https://frank-gp.github.io/doc/devops/aws/readme.md",
                 "links": [
                     {
                         "name": "Documentación",
-                        "url": "https://github.com/frank-gp/doc/blob/main/tools/aws/readme.md"
+                        "url": "https://github.com/frank-gp/doc/blob/main/devops/aws/readme.md"
                     }
                 ],
                 "createdAt": "2025-01-01:00:00.000Z"
@@ -54,15 +54,15 @@
                 "descriptionLesson": "En este tutorial aprenderás a desplegar una página web HTML en una instancia de AWS EC2, utilizando SSH y la línea de comandos (CLI). Ideal para quienes están comenzando a trabajar con servidores en la nube y desean entender el flujo básico de despliegue.",
                 "tags": ["AWS", "EC2", "SSH", "CLI"],
                 "youtubeUrl": "https://youtu.be/4Yk4EKHxcR8",
-                "markdownUrl": "https://frank-gp.github.io/doc/tools/aws/EC2/web-server.md",
+                "markdownUrl": "https://frank-gp.github.io/doc/devops/aws/EC2/web-server.md",
                 "links": [
                     {
                         "name": "AWS.md",
-                        "url": "https://frank-gp.github.io/doc/tools/aws/readme.md"
+                        "url": "https://frank-gp.github.io/doc/devops/aws/readme.md"
                     },
                     {
                         "name": "Linux Commands",
-                        "url": "https://github.com/frank-gp/doc/tree/main/tools/linux"
+                        "url": "https://github.com/frank-gp/doc/tree/main/devops/linux"
                     },
                     {
                         "name": "AWS CLI",
@@ -93,7 +93,7 @@
                 "descriptionLesson": "En este tutorial, aprenderás cómo crear un sencillo Hello World en Node.js y desplegarlo en un servidor AWS EC2. Una guía práctica para quienes se inician en el desarrollo backend y despliegue en la nube.",
                 "tags": ["AWS", "EC2", "Node.js"],
                 "youtubeUrl": "https://youtu.be/G-FDHNfeud8",
-                "markdownUrl": "https://frank-gp.github.io/doc/tools/linux/installs/nodejs.md",
+                "markdownUrl": "https://frank-gp.github.io/doc/linux/installs/nodejs.md",
                 "createdAt": "2025-01-01:00:00.000Z"
             },
             {
@@ -104,15 +104,15 @@
                 "descriptionLesson": "Aprende a desplegar una aplicación completa desarrollada con el stack MERN (MongoDB, Express, React y Node.js) en un servidor AWS EC2. Este tutorial te llevará desde la configuración del servidor hasta el despliegue y acceso público a tu aplicación.",
                 "tags": ["AWS", "EC2", "MERN", "MongoDB", "Express", "React", "Node.js"],
                 "youtubeUrl": "https://youtu.be/V7KZ8kt8-PA",
-                "markdownUrl": "https://frank-gp.github.io/doc/tools/linux/installs/nodejs.md",
+                "markdownUrl": "https://frank-gp.github.io/doc/linux/installs/nodejs.md",
                 "links": [
                     {
                         "name": "AWS.md",
-                        "url": "https://frank-gp.github.io/doc/tools/aws/readme.md"
+                        "url": "https://frank-gp.github.io/doc/devops/aws/readme.md"
                     },
                     {
                         "name": "Linux Commands",
-                        "url": "https://github.com/frank-gp/doc/tree/main/tools/linux"
+                        "url": "https://github.com/frank-gp/doc/tree/main/linux"
                     },
                     {
                         "name": "AWS CLI",
@@ -133,15 +133,15 @@
                 "descriptionLesson": "En este tutorial aprenderás a instalar un certificado SSL gratuito usando Let's Encrypt y Certbot en una instancia EC2 de Amazon Web Services (AWS) con Nginx como servidor web.",
                 "tags": ["AWS", "EC2", "Certificado SSL", "Nginx", "Let's Encrypt", "Certbot"],
                 "youtubeUrl": "https://youtu.be/D1eUBNXm-kw",
-                "markdownUrl": "https://frank-gp.github.io/doc/tools/linux/amazon-linux/readme.md",
+                "markdownUrl": "https://frank-gp.github.io/doc/devops/amazon-linux/readme.md",
                 "links": [
                     {
                         "name": "AWS.md",
-                        "url": "https://frank-gp.github.io/doc/tools/aws/readme.md"
+                        "url": "https://frank-gp.github.io/doc/devops/aws/readme.md"
                     },
                     {
                         "name": "Linux Commands",
-                        "url": "https://github.com/frank-gp/doc/tree/main/tools/linux"
+                        "url": "https://github.com/frank-gp/doc/tree/main/linux"
                     }
                 ],
                 "createdAt": "2025-05-28:00:00.000Z"
@@ -154,15 +154,15 @@
                 "descriptionLesson": "En este tutorial aprenderás a configurar un entorno de producción en AWS EC2 para aplicaciones Node.js, instalar y usar PM2 para mantener tu app corriendo, configurar Nginx como proxy inverso y automatizar despliegues con GitHub Actions. Desde la instalación de Node.js hasta la integración completa de CI/CD, todo paso a paso.",
                 "tags": ["AWS", "EC2", "CI/CD", "GitHub Actions", "Node.js", "PM2", "Nginx"],
                 "youtubeUrl": "https://youtu.be/JxJLmnE4VB4",
-                "markdownUrl": "https://frank-gp.github.io/doc/tools/linux/amazon-linux/ci-cd.md",
+                "markdownUrl": "https://frank-gp.github.io/doc/devops/amazon-linux/ci-cd.md",
                 "links": [
                     {
                         "name": "AWS.md",
-                        "url": "https://frank-gp.github.io/doc/tools/aws/readme.md"
+                        "url": "https://frank-gp.github.io/doc/devops/aws/readme.md"
                     },
                     {
                         "name": "Linux Commands",
-                        "url": "https://github.com/frank-gp/doc/tree/main/tools/linux"
+                        "url": "https://github.com/frank-gp/doc/tree/main/devops/linux"
                     }
                 ],
                 "createdAt": "2025-05-28:00:00.000Z"
@@ -285,11 +285,11 @@
                 "descriptionLesson": "En este tutorial aprenderás a utilizar WinSCP, htop y glances, tres herramientas fundamentales para la gestión y monitoreo de servidores Linux.",
                 "tags": ["Linux", "Monitorización", "WinSCP", "htop", "glances"],
                 "youtubeUrl": "https://youtu.be/ionRsMjlT8s",
-                "markdownUrl": "https://frank-gp.github.io/doc/tools/linux/amazon-linux/monitoring.md",
+                "markdownUrl": "https://frank-gp.github.io/doc/devops/amazon-linux/monitoring.md",
                 "links": [
                     {
                         "name": "Documentación",
-                        "url": "https://github.com/frank-gp/doc/blob/main/tools/aws/readme.md"
+                        "url": "https://github.com/frank-gp/doc/blob/main/devops/aws/readme.md"
                     }
                 ],
                 "createdAt": "2025-01-01:00:00.000Z"

@@ -31,7 +31,7 @@
                 "descriptionLesson": "¿Necesitas cambiar la contraseña de tu usuario en PostgreSQL? 🐘✨ En este video te muestro cómo hacerlo en pocos minutos. 👨‍💻💡",
                 "tags": ["PostgreSQL", "Password PostgreSQL"],
                 "youtubeUrl": "https://youtu.be/W034pKhzmoE",
-                "markdownUrl": "https://frank-gp.github.io/doc/backend/postgres/change-password.md",
+                "markdownUrl": "https://frank-gp.github.io/doc/database/postgres/change-password.md",
                 "links": [
                     {
                         "name": "PostgreSQL Downloads",
@@ -39,7 +39,7 @@
                     },
                     {
                         "name": "Doc",
-                        "url": "https://github.com/frank-gp/doc/tree/main/backend/postgres"
+                        "url": "https://github.com/frank-gp/doc/tree/main/database/postgres"
                     }
                 ],
                 "createdAt": "2025-01-04:00:00.000Z"

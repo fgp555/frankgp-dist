@@ -15,11 +15,11 @@
                 "descriptionLesson": "En este tutorial aprenderás a desplegar una aplicación MERN Stack (MongoDB, Express, React, Node.js) en Azure utilizando GitHub Actions para configurar un flujo de CI/CD automatizado. Verás cómo llevar tu aplicación de desarrollo a producción sin complicaciones.",
                 "tags": ["Azure", "GitHub Actions", "MERN", "MongoDB", "Express", "React", "Node.js"],
                 "youtubeUrl": "https://youtu.be/Gt5CSoZOK8E",
-                "markdownUrl": "https://frank-gp.github.io/doc/tools/azure/MERN-Stack.md",
+                "markdownUrl": "https://frank-gp.github.io/doc/devops/azure/MERN-Stack.md",
                 "links": [
                     {
                         "name": "Documentación",
-                        "url": "https://github.com/frank-gp/doc/tree/main/tools/azure"
+                        "url": "https://github.com/frank-gp/doc/tree/main/devops/azure"
                     }
                 ]
             },
