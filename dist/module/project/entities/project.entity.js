@@ -9,13 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ProjectEntity = void 0;
+exports.ProjectEntity = exports.ProjectArchitecture = void 0;
 const typeorm_1 = require("typeorm");
 const project_image_entity_1 = require("./project-image.entity");
 const project_link_entity_1 = require("./project-link.entity");
 const project_technology_entity_1 = require("./project-technology.entity");
 const project_collaborator_entity_1 = require("./project-collaborator.entity");
 const project_dates_embeddable_1 = require("./project-dates.embeddable");
+var ProjectArchitecture;
+(function (ProjectArchitecture) {
+    ProjectArchitecture["MONOLITHIC"] = "Monolithic";
+    ProjectArchitecture["MICROSERVICES"] = "Microservices";
+    ProjectArchitecture["MODULAR"] = "Modular";
+    ProjectArchitecture["SERVERLESS"] = "Serverless";
+    ProjectArchitecture["CLEAN"] = "Clean";
+    ProjectArchitecture["HEXAGONAL"] = "Hexagonal";
+})(ProjectArchitecture || (exports.ProjectArchitecture = ProjectArchitecture = {}));
 let ProjectEntity = class ProjectEntity {
 };
 exports.ProjectEntity = ProjectEntity;
@@ -27,6 +36,10 @@ __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
 ], ProjectEntity.prototype, "title", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ unique: true }),
+    __metadata("design:type", String)
+], ProjectEntity.prototype, "slug", void 0);
 __decorate([
     (0, typeorm_1.Column)({ type: "text" }),
     __metadata("design:type", String)
@@ -43,6 +56,14 @@ __decorate([
     (0, typeorm_1.Column)("simple-array"),
     __metadata("design:type", Array)
 ], ProjectEntity.prototype, "tags", void 0);
+__decorate([
+    (0, typeorm_1.Column)({
+        type: "enum",
+        enum: ProjectArchitecture,
+        default: ProjectArchitecture.MONOLITHIC,
+    }),
+    __metadata("design:type", String)
+], ProjectEntity.prototype, "architecture", void 0);
 __decorate([
     (0, typeorm_1.OneToMany)(() => project_image_entity_1.ProjectImageEntity, (image) => image.project, {
         cascade: true,

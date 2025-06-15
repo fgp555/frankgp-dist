@@ -1,0 +1,58 @@
+[
+    {
+        "courseId": 25620000,
+        "sectionOrder": 3,
+        "slug": "cloudflare",
+        "titleSection": "Cloudflare y Seguridad Web",
+        "lessons": [
+            {
+                "lessonOrder": 1,
+                "slug": "agregar-dominio",
+                "labelLesson": "Agregar Dominio a Cloudflare",
+                "titleLesson": "Obtenga SSL gratis para su sitio web con Cloudflare | Agregar Dominio a Cloudflare",
+                "descriptionLesson": "La forma más fácil de obtener un certificado SSL gratuito es registrarse en Cloudflare y agregar tu dominio.",
+                "tags": ["Cloudflare", "CDN", "DNS", "seguridad", "web", "dominio"],
+                "youtubeUrl": "https://youtu.be/AEizjP6Y9sU",
+                "links": [
+                    {
+                        "name": "Cloudflare Dashboard",
+                        "url": "https://dash.cloudflare.com/"
+                    }
+                ],
+                "createdAt": "2022-02-22T00:00:00.000Z"
+            },
+            {
+                "lessonOrder": 2,
+                "slug": "tunnel",
+                "labelLesson": "Tuneles con Cloudflare",
+                "titleLesson": "Convierte tu PC en un VPS usando Cloudflare Tunnel",
+                "descriptionLesson": "¿Quieres acceder a tu PC desde cualquier parte del mundo como si fuera un VPS? En este video te enseño cómo hacerlo GRATIS usando Cloudflare Tunnel en tu Windows. ¡Vamos!",
+                "tags": ["Cloudflare", "cloudflared", "túnel seguro", "WSL2", "n8n"],
+                "youtubeUrl": "https://youtu.be/LeGzaw0EdYg",
+                "links": [
+                    {
+                        "name": "Cloudflare Dashboard",
+                        "url": "https://dash.cloudflare.com/"
+                    }
+                ],
+                "createdAt": "2025-06-07T00:00:00.000Z"
+            },
+            {
+                "lessonOrder": 3,
+                "slug": "bloquear-bots",
+                "labelLesson": "Bloquear bots",
+                "titleLesson": "Cómo bloquear ataques automatizados usando Cloudflare (Plan Gratuito)",
+                "descriptionLesson": "¿Tu servidor Node.js está recibiendo solicitudes sospechosas hacia rutas como /wp-admin/ o archivos .php que no existen? Estos son intentos automatizados dirigidos a instalaciones de WordPress que no estás usando.",
+                "tags": ["Cloudflare", "DNS", "dominio", "HTTPS", "DDoS"],
+                "youtubeUrl": "https://youtu.be/EI9ehUc5ukI",
+                "links": [
+                    {
+                        "name": "Cloudflare Dashboard",
+                        "url": "https://dash.cloudflare.com/"
+                    }
+                ],
+                "createdAt": "2025-06-15T00:00:00.000Z"
+            }
+        ]
+    }
+]

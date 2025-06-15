@@ -1,7 +1,7 @@
 [
     {
+        "courseId": 25110000,
         "sectionOrder": 1,
-        "courseId": 25010000,
         "slug": "bases",
         "titleSection": "Bases",
         "lessons": [
@@ -42,7 +42,7 @@
     },
     {
         "sectionOrder": 2,
-        "courseId": 25010000,
+        "courseId": 25110000,
         "slug": "ec2",
         "titleSection": "Elastic Compute Cloud",
         "lessons": [
@@ -181,7 +181,7 @@
     },
     {
         "sectionOrder": 3,
-        "courseId": 25010000,
+        "courseId": 25110000,
         "slug": "s3",
         "titleSection": "Simple Storage Service",
         "lessons": [
@@ -219,7 +219,7 @@
     },
     {
         "sectionOrder": 4,
-        "courseId": 25010000,
+        "courseId": 25110000,
         "slug": "databases",
         "titleSection": "Databases",
         "lessons": [
@@ -237,7 +237,7 @@
     },
     {
         "sectionOrder": 5,
-        "courseId": 25010000,
+        "courseId": 25110000,
         "slug": "varios",
         "titleSection": "Varios",
         "lessons": [

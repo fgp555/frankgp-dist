@@ -2,8 +2,10 @@
     {
         "id": 250201,
         "title": "Ticket Management System",
+        "slug": "transpaservic-web",
         "description": "Sistema de tickets para la empresa Transpaservic",
         "category": "Full Stack",
+        "architecture": "modular",
         "tags": ["frontend", "figma", "nestjs", "mysql", "reactjs"],
         "image": "https://i.postimg.cc/qqWL8KSK/transpaservic-web.webp",
         "images": [
@@ -56,6 +58,7 @@
     {
         "id": 250202,
         "title": "Ticket Management System",
+        "slug": "transpaservic-mobile",
         "description": "Sistema de tickets para la empresa Transpaservic",
         "category": "Mobile",
         "tags": ["mobile", "play store", "figma", "nestjs", "mysql"],
@@ -111,6 +114,7 @@
     {
         "id": 250301,
         "title": "Transport Website",
+        "slug": "e-transportech",
         "description": "Servicio de Trasporte de Carga Pesada",
         "category": "Full Stack",
         "tags": ["fullstack", "frontend", "backend", "cpanel", "figma"],
@@ -163,6 +167,7 @@
     {
         "id": 241120,
         "title": "Appointment System",
+        "slug": "appointment-system",
         "description": "Sistema de citas para clinicas",
         "category": "Full Stack",
         "tags": ["fullstack", "frontend", "backend", "cpanel"],
@@ -209,6 +214,7 @@
     {
         "id": 241102,
         "title": "URL Shortener",
+        "slug": "url-shortener",
         "description": "Acortador de URL con copias de seguridad y estatisticas",
         "category": "Full Stack",
         "tags": ["fullstack", "frontend", "backend", "cpanel"],
@@ -248,6 +254,7 @@
     {
         "id": 241020,
         "title": "Shipping System",
+        "slug": "shipping-system",
         "description": "Sistema de envios y entregas con generacion de reportes en PDF",
         "category": "Full Stack",
         "tags": ["fullstack", "frontend", "backend", "cpanel"],
@@ -287,6 +294,7 @@
     {
         "id": 240902,
         "title": "BP Ventures",
+        "slug": "bp-ventures",
         "description": "Sistema de entregables para la empresa BP Ventures",
         "category": "Full Stack",
         "tags": ["fullstack", "frontend", "backend", "cpanel"],
@@ -352,6 +360,7 @@
     {
         "id": 240420,
         "title": "Mariaknoll Store",
+        "slug": "mariaknoll-store",
         "description": "Catalogo full stack para vestido de fiesta",
         "category": "Full Stack",
         "tags": ["fullstack", "frontend", "backend", "cpanel"],
@@ -404,6 +413,7 @@
     {
         "id": 240320,
         "title": "Mini-Postman App",
+        "slug": "mini-postman-app",
         "description": "App Mini-Postman for Get Post and Put Request",
         "category": "Tools",
         "tags": ["frontend", "tools"],
@@ -441,6 +451,7 @@
     {
         "id": 231220,
         "title": "Fou De Toi Restaurant",
+        "slug": "foudetoi-restaurant",
         "description": "Restaurante vegetariano",
         "category": "Frontend",
         "tags": ["frontend"],
@@ -472,6 +483,7 @@
     {
         "id": 220620,
         "title": "Venta de Laptops",
+        "slug": "catalogo-laptops",
         "description": "Catalogo para la venta de laptop",
         "category": "Frontend",
         "tags": ["frontend"],

@@ -45,6 +45,13 @@ class ProjectService {
             // ],
         });
     }
+    async findOneBySlug(slug) {
+        return await this.projectRepo.findOne({
+            where: { slug },
+            // relaciones si necesitas
+            // relations: [...]
+        });
+    }
     async update(id, data) {
         const project = await this.projectRepo.findOneBy({ id });
         if (!project)

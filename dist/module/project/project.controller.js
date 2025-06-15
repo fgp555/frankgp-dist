@@ -35,6 +35,18 @@ class ProjectController {
             next(new error_middleware_1.AppError(err.message, 400));
         }
     }
+    async findOneSlug(req, res, next) {
+        try {
+            const slug = req.params.slug;
+            const result = await service.findOneBySlug(slug);
+            if (!result)
+                throw new error_middleware_1.AppError("Project not found", 404);
+            res.json(result);
+        }
+        catch (err) {
+            next(new error_middleware_1.AppError(err.message, 400));
+        }
+    }
     async update(req, res, next) {
         try {
             const id = Number(req.params.id);

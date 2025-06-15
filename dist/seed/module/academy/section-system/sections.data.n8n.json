@@ -1,0 +1,27 @@
+[
+    {
+        "courseId": 25610000,
+        "sectionOrder": 2,
+        "slug": "n8n",
+        "titleSection": "Introducción",
+        "lessons": [
+            {
+                "lessonOrder": 1,
+                "slug": "instalacion-wsl2",
+                "labelLesson": "Instalación en WSL2",
+                "titleLesson": "Cómo instalar n8n en WSL2 paso a paso",
+                "descriptionLesson": "Aprende cómo instalar y ejecutar n8n de forma local en Windows usando WSL2. Verás cómo configurar el entorno, instalar dependencias y lanzar tu primer flujo.",
+                "tags": ["n8n", "WSL2", "instalación", "automatización", "ubuntu"],
+                "youtubeUrl": "",
+                "markdownUrlPremium": "https://frank-gp.github.io/doc/ai/n8n/fgp.one/01-install-in-wsl.md",
+                "linksPremium": [
+                    {
+                        "name": "Downloads",
+                        "url": "https://frank-gp.github.io/doc/ai/n8n/fgp.one/01-install-in-wsl.md"
+                    }
+                ],
+                "createdAt": "2025-06-15T00:00:00.000Z"
+            }
+        ]
+    }
+]

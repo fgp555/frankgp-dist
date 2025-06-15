@@ -1,13 +1,11 @@
 [
     {
-        "id": 25020100,
+        "courseId": 25120000,
         "sectionOrder": 3,
         "slug": "introduccion",
         "titleSection": "Introduccion",
-        "courseId": 25020000,
         "lessons": [
             {
-                "id": 25020101,
                 "lessonOrder": 1,
                 "slug": "mern-github-actions",
                 "labelLesson": "MERN GitHub Actions",
@@ -24,7 +22,6 @@
                 ]
             },
             {
-                "id": 25020102,
                 "lessonOrder": 2,
                 "slug": "todo-list-nodejs",
                 "labelLesson": "To-Do List Node.js",
@@ -34,7 +31,6 @@
                 "youtubeUrl": "https://youtu.be/CnOr1b7IR1s"
             },
             {
-                "id": 25020103,
                 "lessonOrder": 3,
                 "slug": "deploy-web-dotnet",
                 "labelLesson": "Deploy Web .NET ",

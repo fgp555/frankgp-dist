@@ -1,7 +1,7 @@
 [
     {
+        "courseId": 25130000,
         "sectionOrder": 2,
-        "courseId": 25030000,
         "slug": "deploy",
         "titleSection": "Deploy",
         "description": "Deploy on Shared Hosting",

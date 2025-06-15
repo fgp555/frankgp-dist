@@ -28,6 +28,7 @@ const lesson_entity_1 = require("../module/academy/dtos-entities/lesson.entity")
 const section_entity_1 = require("../module/academy/dtos-entities/section.entity");
 const category_entity_1 = require("../module/academy/dtos-entities/category.entity");
 const lesson_link_entity_1 = require("../module/academy/dtos-entities/lesson-link.entity");
+const lesson_link_premium_entity_1 = require("../module/academy/dtos-entities/lesson-link-premium.entity");
 const entities = [
     options_entity_1.OptionsEntity,
     shortener_visit_entity_1.ShortenerVisitEntity,
@@ -52,6 +53,7 @@ const entities = [
     section_entity_1.SectionEntity,
     category_entity_1.CategoryEntity,
     lesson_link_entity_1.LessonLinkEntity,
+    lesson_link_premium_entity_1.LessonLinkPremiumEntity,
 ];
 // Configuración de TypeORM
 const typeOrmConfig = {

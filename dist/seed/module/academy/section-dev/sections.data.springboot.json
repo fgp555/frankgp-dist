@@ -1,0 +1,46 @@
+[
+    {
+        "courseId": 25510000,
+        "sectionOrder": 2,
+        "slug": "springboot",
+        "titleSection": "Introducción",
+        "lessons": [
+            {
+                "lessonOrder": 1,
+                "slug": "hello-world",
+                "labelLesson": "Hello World",
+                "titleLesson": "Crear tu Primer Hello World en Java | ✅ Instalar Java JDK | VSCode | Hola mundo",
+                "descriptionLesson": "En este primer video aprenderás cómo instalar Java JDK (Java Development Kit) en tu computadora y cómo crear tu primer programa en Java: el clásico Hello World.",
+                "tags": ["java", "jdk", "vscode", "hello world", "instalación"],
+                "youtubeUrl": "https://youtu.be/LEuG_PLHMAE",
+                "links": [
+                    {
+                        "name": "JDK Downloads",
+                        "url": "https://www.oracle.com/java/technologies/downloads"
+                    }
+                ],
+                "createdAt": "2025-06-15T00:00:00.000Z"
+            },
+            {
+                "lessonOrder": 2,
+                "slug": "rest-api",
+                "labelLesson": "REST API",
+                "titleLesson": "🚀 Crea tu Primera REST API con Spring Boot | Hello World + Configuración VSCode | Hola Mundo",
+                "descriptionLesson": "Verás cómo generar un proyecto con Spring Initializr, configurar Maven correctamente y crear tu primer endpoint tipo Hello World / Hola Mundo. Ideal para quienes vienen de Node.js y quieren entender cómo funciona el backend con Java.",
+                "tags": ["spring boot", "rest api", "java", "vscode", "maven", "hello world", "backend"],
+                "youtubeUrl": "https://youtu.be/M5cfm_dqSGo",
+                "links": [
+                    {
+                        "name": "JDK Downloads",
+                        "url": "https://www.oracle.com/java/technologies/downloads"
+                    },
+                    {
+                        "name": "Spring Initializr",
+                        "url": "https://start.spring.io/"
+                    }
+                ],
+                "createdAt": "2025-06-15T00:00:00.000Z"
+            }
+        ]
+    }
+]

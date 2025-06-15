@@ -1,0 +1,64 @@
+[
+    {
+        "courseId": 25520000,
+        "sectionOrder": 3,
+        "slug": "api-whatsapp",
+        "titleSection": "Automatizaciones con WhatsApp API",
+        "lessons": [
+            {
+                "lessonOrder": 1,
+                "slug": "intro-api-whatsapp",
+                "labelLesson": "Introducción a WhatsApp API",
+                "titleLesson": "¿Qué es la API de WhatsApp y cómo funciona?",
+                "descriptionLesson": "Conoce las opciones disponibles para automatizar mensajes en WhatsApp, incluyendo la API oficial de Meta, proveedores como 360dialog y alternativas open source.",
+                "tags": ["WhatsApp", "API", "automatización", "bots", "mensajes"],
+                "youtubeUrl": "https://youtu.be/tu-video-id-7",
+                "vkUrl": "https://vk.com/video606230824_456239070",
+                "markdownUrl": "https://frank-gp.github.io/doc/whatsapp/intro.md",
+                "links": [
+                    {
+                        "name": "WhatsApp Business API",
+                        "url": "https://developers.facebook.com/docs/whatsapp/"
+                    }
+                ],
+                "createdAt": "2025-06-15T00:00:00.000Z"
+            },
+            {
+                "lessonOrder": 2,
+                "slug": "webhook-whatsapp-n8n",
+                "labelLesson": "Webhook con WhatsApp y n8n",
+                "titleLesson": "Recibir mensajes de WhatsApp en n8n usando Webhooks",
+                "descriptionLesson": "Aprende a recibir y procesar mensajes de WhatsApp en tiempo real en tu flujo de n8n utilizando webhooks y túneles con Cloudflare.",
+                "tags": ["WhatsApp", "n8n", "webhook", "automatización", "chatbot"],
+                "youtubeUrl": "https://youtu.be/tu-video-id-8",
+                "vkUrl": "https://vk.com/video606230824_456239071",
+                "markdownUrl": "https://frank-gp.github.io/doc/whatsapp/webhook.md",
+                "links": [
+                    {
+                        "name": "Integración WhatsApp con n8n",
+                        "url": "https://n8n.io/integrations/whatsapp/"
+                    }
+                ],
+                "createdAt": "2025-06-15T00:00:00.000Z"
+            },
+            {
+                "lessonOrder": 3,
+                "slug": "enviar-mensajes",
+                "labelLesson": "Enviar mensajes con n8n",
+                "titleLesson": "Cómo enviar mensajes de WhatsApp desde n8n",
+                "descriptionLesson": "Aprende a configurar una acción en n8n para enviar mensajes de WhatsApp automáticamente usando la API de tu proveedor. Ideal para notificaciones, confirmaciones y alertas.",
+                "tags": ["n8n", "WhatsApp", "envío", "mensajes", "automatización"],
+                "youtubeUrl": "https://youtu.be/tu-video-id-9",
+                "vkUrl": "https://vk.com/video606230824_456239072",
+                "markdownUrl": "https://frank-gp.github.io/doc/whatsapp/send.md",
+                "links": [
+                    {
+                        "name": "Documentación proveedor API",
+                        "url": "https://www.360dialog.com/"
+                    }
+                ],
+                "createdAt": "2025-06-15T00:00:00.000Z"
+            }
+        ]
+    }
+]

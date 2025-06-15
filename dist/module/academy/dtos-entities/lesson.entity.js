@@ -13,6 +13,7 @@ exports.LessonEntity = void 0;
 const typeorm_1 = require("typeorm");
 const section_entity_1 = require("./section.entity");
 const lesson_link_entity_1 = require("./lesson-link.entity");
+const lesson_link_premium_entity_1 = require("./lesson-link-premium.entity");
 let LessonEntity = class LessonEntity {
 };
 exports.LessonEntity = LessonEntity;
@@ -25,15 +26,15 @@ __decorate([
     __metadata("design:type", String)
 ], LessonEntity.prototype, "slug", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ length: 255, charset: 'utf8mb4', collation: 'utf8mb4_unicode_ci' }),
+    (0, typeorm_1.Column)({ length: 255, charset: "utf8mb4", collation: "utf8mb4_unicode_ci" }),
     __metadata("design:type", String)
 ], LessonEntity.prototype, "labelLesson", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ length: 255, nullable: true, charset: 'utf8mb4', collation: 'utf8mb4_unicode_ci' }),
+    (0, typeorm_1.Column)({ length: 255, nullable: true, charset: "utf8mb4", collation: "utf8mb4_unicode_ci" }),
     __metadata("design:type", String)
 ], LessonEntity.prototype, "titleLesson", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: "text", nullable: true, charset: 'utf8mb4', collation: 'utf8mb4_unicode_ci' }),
+    (0, typeorm_1.Column)({ type: "text", nullable: true, charset: "utf8mb4", collation: "utf8mb4_unicode_ci" }),
     __metadata("design:type", String)
 ], LessonEntity.prototype, "descriptionLesson", void 0);
 __decorate([
@@ -53,12 +54,23 @@ __decorate([
     __metadata("design:type", String)
 ], LessonEntity.prototype, "markdownUrl", void 0);
 __decorate([
+    (0, typeorm_1.Column)("text", { nullable: true }),
+    __metadata("design:type", String)
+], LessonEntity.prototype, "markdownUrlPremium", void 0);
+__decorate([
     (0, typeorm_1.OneToMany)(() => lesson_link_entity_1.LessonLinkEntity, (link) => link.lesson, {
         cascade: true,
         eager: true,
     }),
     __metadata("design:type", Array)
 ], LessonEntity.prototype, "links", void 0);
+__decorate([
+    (0, typeorm_1.OneToMany)(() => lesson_link_premium_entity_1.LessonLinkPremiumEntity, (link) => link.lesson, {
+        cascade: true,
+        eager: true,
+    }),
+    __metadata("design:type", Array)
+], LessonEntity.prototype, "linksPremium", void 0);
 __decorate([
     (0, typeorm_1.Column)({ name: "lesson_order", default: 1 }),
     __metadata("design:type", Number)

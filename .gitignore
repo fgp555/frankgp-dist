@@ -10,4 +10,4 @@ temp/
 package-lock.json
 /backups
 /uploads
-*temp.*
+*temp*
